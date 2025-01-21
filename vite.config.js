@@ -15,4 +15,5 @@ export default defineConfig({
       extensions: ['vue']
     })
   ],
+  base: '/my-activity-project/',
 })
