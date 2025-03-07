@@ -22,3 +22,4 @@ app.use(router);
 router.isReady().then(() => {
     app.mount("#app");
 });
+export { App };
