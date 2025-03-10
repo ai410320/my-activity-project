@@ -402,7 +402,7 @@
     .grid.table .table-td {
         background-color: #fffbf7;
         border: 1px solid rgb(236 195 148);
-        text-align: center;
+        text-align: center !important;
         vertical-align: middle;
         padding: 0.5rem 1rem;
     }
@@ -437,7 +437,7 @@
         text-decoration: none;
         text-shadow: 0 2px 4px #b58d5c;
         padding: 0.5rem 4rem;
-        color: #ffffff;
+        color: #ffffff !important;
         /* background: linear-gradient(180deg,#e1f1fe,#f6faff 26%,#aad2ff 82%,#e1f1fe); */
         background: linear-gradient(172deg, #ffedd2 0%, #eac48b 49%, #e7ba78 51%, #ca9452 100%);
         border-radius: 8px;
@@ -552,9 +552,9 @@
             box-shadow: 0 8px 16px rgb(163 163 163 / 70%);
         }
         .main-button.btn-opacity.btn-float {
-            opacity: 1;
+            opacity: 1 !important;
             text-shadow: none;
-            color: #fff;
+            color: #fff !important;
             background: rgb(238 207 172 / 90%);
         }
     }
