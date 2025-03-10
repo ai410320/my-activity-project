@@ -5,7 +5,7 @@
                 <img class="slogan-pc" src="./img/slogan_pc.webp" />
                 <img class="slogan-h5" src="./img/slogan_h5.webp" />
                 <div class="absolute promotion-time-range label-position mt-px--35 left-px-15 text-nowrap align-items-center label-font-size px-2 text-secondary l-spacing-0">
-                    <div id="timeRange"></div>
+                    <div id="timeRange">{{ rangeDescription }}</div>
                 </div>
             </div>
         </div>
@@ -79,10 +79,7 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
-                    <a @click="detailClick()" class="main-button btn-round flex-center">領取測試試試試試</a>
-                    {{ props.msg }}
-                    {{ isVisible }}{{ rangeDescription }} {{ activityStartTime }} {{ buttonClass }}
+                    <a v-if="isVisible" @click="detailClick()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
                 </div>
                 <!-- CTA end -->
             </div>
@@ -115,7 +112,6 @@ const detailClick = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
 }
-console.log('ff_promo_04', props.msg)
 const rangeDescription = computed(() => {
     if (activityDuration.value == 1) {
         return '长期活动'
