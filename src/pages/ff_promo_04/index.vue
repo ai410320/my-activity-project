@@ -79,7 +79,7 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ rangeDescription }}</a>
+                    <a v-if="isVisible" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
                     <a @click="detailClick()" class="main-button btn-round flex-center">領取測試試試試試</a>
                     {{ props.msg }}
                     {{ isVisible }}{{ rangeDescription }} {{ activityStartTime }} {{ buttonClass }}
@@ -125,13 +125,13 @@ const rangeDescription = computed(() => {
 })
 onMounted(() => {
     console.log('ff_promo_004', props.msg)
-})
-const isVisible = ref(false)
-const buttonText = computed(() => {
     if (props.msg?.btnText) {
         isVisible.value = true
         console.log('vvv', isVisible.value)
     }
+})
+const isVisible = ref(false)
+const buttonText = computed(() => {
     return props.msg?.btnText
 })
 const btnStatus = computed(() => {
