@@ -81,6 +81,8 @@
                 <div class="flex-center">
                     <a v-if="isVisible" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ rangeDescription }}</a>
                     <a @click="detailClick()" class="main-button btn-round flex-center">領取測試試試試試</a>
+                    {{ props.msg }}
+                    {{ isVisible }}{{ rangeDescription }} {{ activityStartTime }} {{ buttonClass }}
                 </div>
                 <!-- CTA end -->
             </div>
@@ -128,6 +130,7 @@ const isVisible = ref(false)
 const buttonText = computed(() => {
     if (props.msg?.btnText) {
         isVisible.value = true
+        console.log('vvv', isVisible.value)
     }
     return props.msg?.btnText
 })
