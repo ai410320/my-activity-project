@@ -79,7 +79,7 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a id="actionBtn" class="main-button btn-round flex-center" style="display: none"> 立即领取 </a>
+                    <a v-if="isVisible" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ rangeDescription }}</a>
                     <a @click="detailClick()" class="main-button btn-round flex-center">領取測試試試試試</a>
                 </div>
                 <!-- CTA end -->
@@ -101,7 +101,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import '../../style.css'
 const props = defineProps({
     msg: Object,
@@ -114,4 +114,44 @@ const detailClick = () => {
     emit('updateClick', '按鈕被點擊')
 }
 console.log('ff_promo_04', props.msg)
+const rangeDescription = computed(() => {
+    if (activityDuration.value == 1) {
+        return '长期活动'
+    } else if (activityDuration.value == 2) {
+        return `${dateFormat(activityStartTime)}至${dateFormat(activityEndTime)}`
+    }
+})
+const isVisible = ref(false)
+const buttonText = computed(() => {
+    if (props.msg?.btnText) isVisible.value = true
+    return props.msg?.btnText
+})
+const btnStatus = computed(() => {
+    return props.msg?.btnStatus
+})
+const activityDuration = computed(() => {
+    return props.msg?.activityDuration
+})
+const activityStartTime = computed(() => {
+    return props.msg?.activityStartTime
+})
+const activityEndTime = computed(() => {
+    return props.msg?.activityEndTime
+})
+// 計算按鈕的 class
+const buttonClass = computed(() => {
+    if (btnStatus.value === 3) return 'btn-disabled'
+    if (btnStatus.value === 2) return 'btn-opacity'
+    return 'btn-effect'
+})
+
+const dateFormat = (timeStamp) => {
+    const date = new Date(timeStamp)
+    const year = date.getFullYear()
+    const month = String(date.getMonth() + 1).padStart(2, '0')
+    const day = String(date.getDate()).padStart(2, '0')
+    console.log(`${year}-${month}-${day}`)
+    console.log(timeStamp)
+    return `${year}-${month}-${day}`
+}
 </script>
