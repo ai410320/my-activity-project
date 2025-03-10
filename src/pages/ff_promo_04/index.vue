@@ -102,16 +102,16 @@
 
 <script setup>
 import { ref } from 'vue'
-
-defineProps({
-    msg: String,
+import '../../style.css'
+const props = defineProps({
+    msg: Object,
 })
 const emit = defineEmits(['updateClick'])
 
 const count = ref(0)
 const detailClick = () => {
-    console.log('testtest')
+    console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
 }
-console.log('ff_promo_04')
+console.log('ff_promo_04', props.msg)
 </script>

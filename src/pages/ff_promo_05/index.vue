@@ -2,20 +2,17 @@
     <div id="ui-promo-detail" class="outer">
         <div class="kv">
             <div class="slogan relative">
-                <img class="slogan-pc" src="./img/slogan_pc_05.webp"/>
-                <img class="slogan-h5" src="./img/slogan_h5_05.webp"/>
-                <div class="absolute promotion-time-range label-position mt-px--35 left-px-15 text-nowrap align-items-center label-font-size px-2 text-secondary l-spacing-0 ">
-                    <div id="timeRange">
-                    </div>
+                <img class="slogan-pc" src="./img/slogan_pc_05.webp" />
+                <img class="slogan-h5" src="./img/slogan_h5_05.webp" />
+                <div class="absolute promotion-time-range label-position mt-px--35 left-px-15 text-nowrap align-items-center label-font-size px-2 text-secondary l-spacing-0">
+                    <div id="timeRange"></div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="promo-content">
-
-                <div class="flex-center"><img class="img-title" src="./img/promo_title1.svg"/></div>
-                <p>
-                <span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">月累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
+                <div class="flex-center"><img class="img-title" src="./img/promo_title1.svg" /></div>
+                <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">月累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
                 <div class="table-box">
                     <table>
                         <thead>
@@ -64,16 +61,15 @@
                         </tbody>
                     </table>
                 </div>
-               
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a id="actionBtn" class="main-button btn-round flex-center" style="display:none">立即领取</a>
+                    <a id="actionBtn" class="main-button btn-round flex-center" style="display: none">立即领取</a>
                 </div>
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="./img/promo_title2.svg"/></div>
+                <div class="flex-center"><img class="img-title" src="./img/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>每月1号至当月最后一天，凡是在【电子游艺厅】月累计有效投注额达到对应等级，次月即可在活动页面领取对应彩金。</li>
@@ -83,19 +79,19 @@
                     <li>此活动只适用于拥有一个账户的会员；每一位用户，每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
                     <li>为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
                 </ol>
-
-            </div>        
+            </div>
         </div>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import '../../style.css'
 
 defineProps({
-  msg: String,
+    msg: Object,
 })
 
 const count = ref(0)
-console.log('ff_promo_04')
+console.log('ff_promo_05', props.msg)
 </script>
