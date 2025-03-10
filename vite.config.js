@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import Pages from 'vite-plugin-pages'
 import vue from '@vitejs/plugin-vue'
+import postcssPresetEnv from 'postcss-preset-env'
+import cssnano from 'cssnano'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -16,13 +18,14 @@ export default defineConfig({
             extensions: ['vue'],
         }),
     ],
-    // css: {
-    //     preprocessorOptions: {
-    //         scss: {
-    //             additionalData: `@use "src/style.scss" as *;`,
-    //         },
-    //     },
-    // },
+    css: {
+        postcss: {
+            plugins: [
+                postcssPresetEnv(),
+                cssnano({ preset: 'default' }), // 改用 cssnano 來壓縮 CSS
+            ],
+        },
+    },
     base: '/my-activity-project/',
     build: {
         lib: {

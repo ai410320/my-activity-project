@@ -86,7 +86,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import './style.scss'
+import './style.css'
 
 defineProps({
     msg: Object,
