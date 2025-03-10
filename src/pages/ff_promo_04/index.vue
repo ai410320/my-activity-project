@@ -101,7 +101,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import '../../style.css'
 const props = defineProps({
     msg: Object,
@@ -121,9 +121,14 @@ const rangeDescription = computed(() => {
         return `${dateFormat(activityStartTime)}至${dateFormat(activityEndTime)}`
     }
 })
+onMounted(() => {
+    console.log('ff_promo_004', props.msg)
+})
 const isVisible = ref(false)
 const buttonText = computed(() => {
-    if (props.msg?.btnText) isVisible.value = true
+    if (props.msg?.btnText) {
+        isVisible.value = true
+    }
     return props.msg?.btnText
 })
 const btnStatus = computed(() => {
