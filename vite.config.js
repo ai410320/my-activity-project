@@ -16,6 +16,13 @@ export default defineConfig({
             extensions: ['vue'],
         }),
     ],
+    // css: {
+    //     preprocessorOptions: {
+    //         scss: {
+    //             additionalData: `@use "src/style.scss" as *;`,
+    //         },
+    //     },
+    // },
     base: '/my-activity-project/',
     build: {
         lib: {

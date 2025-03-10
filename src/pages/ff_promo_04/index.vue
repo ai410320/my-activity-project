@@ -102,7 +102,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import '../../style.scss'
+import './style.scss'
 const props = defineProps({
     msg: Object,
 })
