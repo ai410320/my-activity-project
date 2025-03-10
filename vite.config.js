@@ -28,6 +28,7 @@ export default defineConfig({
     },
     base: '/my-activity-project/',
     build: {
+        cssCodeSplit: false, // 確保 CSS 不是分割的
         lib: {
             entry: './src/index.js', // 專案入口
             name: 'TaskModule',
