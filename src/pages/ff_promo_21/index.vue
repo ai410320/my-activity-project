@@ -12,71 +12,60 @@
         <div class="container">
             <div class="promo-content">
                 <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
-                <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">周累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
+                <p><span class="text-highlight">活动内容：</span>会员于<span class="platform-name">五彩堂</span>电子游艺中，只要单个注单派彩金额超过500元，即可获得加赠彩金最高17777元！</p>
                 <div class="table-box">
                     <table>
                         <thead>
                             <tr>
-                                <th class="t-title" width="20%"><b>阶梯</b></th>
-                                <th class="t-title" width="50%"><b>周有效投注额</b></th>
-                                <th class="t-title" width="30%"><b>奖励金额</b></th>
+                                <th class="t-title"><b>单注派彩金额</b></th>
+                                <th class="t-title"><b>加赠彩金</b></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="t-content">1</td>
-                                <td class="t-content">3000</td>
-                                <td class="t-content">8</td>
+                                <td class="t-content">500+</td>
+                                <td class="t-content">27元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">2</td>
-                                <td class="t-content">5000</td>
-                                <td class="t-content">18</td>
+                                <td class="t-content">1000+</td>
+                                <td class="t-content">57元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">3</td>
-                                <td class="t-content">10000</td>
-                                <td class="t-content">38</td>
+                                <td class="t-content">2000+</td>
+                                <td class="t-content">87元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">4</td>
-                                <td class="t-content">30000</td>
-                                <td class="t-content">108</td>
+                                <td class="t-content">5000+</td>
+                                <td class="t-content">157元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">5</td>
-                                <td class="t-content">50000</td>
-                                <td class="t-content">188</td>
+                                <td class="t-content">10000+</td>
+                                <td class="t-content">307元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">6</td>
-                                <td class="t-content">100000</td>
-                                <td class="t-content">288</td>
+                                <td class="t-content">30000+</td>
+                                <td class="t-content">907元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">7</td>
-                                <td class="t-content">300000</td>
-                                <td class="t-content">388</td>
+                                <td class="t-content">100000+</td>
+                                <td class="t-content">2777元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">8</td>
-                                <td class="t-content">500000</td>
-                                <td class="t-content">888</td>
+                                <td class="t-content">200000+</td>
+                                <td class="t-content">3777元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">9</td>
-                                <td class="t-content">1000000</td>
-                                <td class="t-content">1388</td>
+                                <td class="t-content">500000+</td>
+                                <td class="t-content">7777元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">10</td>
-                                <td class="t-content">3000000</td>
-                                <td class="t-content">3888</td>
+                                <td class="t-content">1000000+</td>
+                                <td class="t-content">17777元</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
+                <p><span class="note-text">例：</span>会员在“糖果派对-极速版”游戏中下注50元，派彩10000元，即可申请307元加赠彩金！</p>
                 <!-- CTA -->
                 <div class="flex-center">
                     <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
@@ -85,14 +74,13 @@
             </div>
             <div class="promo-content">
                 <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
-
                 <ol class="rules">
-                    <li>周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                    <li>该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需【三倍流水】即可取款。</li>
-                    <li>请于次周日24点前领取彩金，逾期将无法领取该优惠。</li>
+                    <li>所获得彩金只需1倍流水方可申请提款；</li>
+                    <li>每天可申请1次，每个注单仅限申请1次，天数按照美东时间进行计算。</li>
+                    <li>所中奖的注单需在24点前进行申请，逾期视为自动放弃优惠。</li>
+                    <li>电子游艺中赠送给您的免费抽奖机会所产生的注单，并不作为参与本次活动的有效注单，以及任何原因投注额小于1元，均不具备参与本次活动。</li>
                     <li>对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格。</li>
                     <li>此活动只适用于拥有一个账户的会员；每一位用户，每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
-                    <li>为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
                 </ol>
             </div>
         </div>
@@ -113,7 +101,7 @@ const sendEvent = () => {
 }
 
 onMounted(() => {
-    console.log('ff_promo_04', props.msg)
+    console.log('ff_promo_21', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
     }

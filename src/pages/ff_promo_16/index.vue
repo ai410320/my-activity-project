@@ -113,7 +113,7 @@ const sendEvent = () => {
 }
 
 onMounted(() => {
-    console.log('ff_promo_04', props.msg)
+    console.log('ff_promo_004', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
     }
