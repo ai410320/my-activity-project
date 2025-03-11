@@ -140,7 +140,7 @@ const rangeDescription = computed(() => {
     if (activityDuration.value == 1) {
         return '长期活动'
     } else if (activityDuration.value == 2) {
-        return `${dateFormat(activityStartTime)}至${dateFormat(activityEndTime)}`
+        return `${dateFormat(props.msg?.activityStartTime)}至${dateFormat(props.msg?.activityEndTime)}`
     }
 })
 // 計算按鈕的 class
