@@ -2,8 +2,8 @@
     <div id="ui-promo-detail" class="outer">
         <div class="kv">
             <div class="slogan relative">
-                <img class="slogan-pc" src="./img/slogan_pc_05.webp" />
-                <img class="slogan-h5" src="./img/slogan_h5_05.webp" />
+                <img class="slogan-pc" src="./img/slogan_pc.webp" />
+                <img class="slogan-h5" src="./img/slogan_h5.webp" />
                 <div class="absolute promotion-time-range label-position mt-px--35 left-px-15 text-nowrap align-items-center label-font-size px-2 text-secondary l-spacing-0">
                     <div id="timeRange">{{ rangeDescription }}</div>
                 </div>
@@ -12,55 +12,54 @@
         <div class="container">
             <div class="promo-content">
                 <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
-                <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">月累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
+                <p>活动内容：即日起会员于棋牌游戏当日有效投注2137元+，次日即可获得棋牌得意金，祝您“棋”开得胜，最高可获<span class="note-text">7137元彩金</span>！</p>
                 <div class="table-box">
                     <table>
                         <thead>
                             <tr>
-                                <th class="t-title" width="20%"><b>阶梯</b></th>
-                                <th class="t-title" width="50%"><b>月有效投注额</b></th>
-                                <th class="t-title" width="30%"><b>奖励金额</b></th>
+                                <th class="t-title" width="20%"><b>单日有效投注</b></th>
+                                <th class="t-title" width="20%"><b>棋牌得意金</b></th>
+                                <th class="t-title" width="25%"><b>派送方式</b></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="t-content">1</td>
-                                <td class="t-content">10000</td>
-                                <td class="t-content">18</td>
+                                <td class="t-content">2137+</td>
+                                <td class="t-content">5元</td>
+                                <td class="t-content" rowspan="7">每天早上8:00到24:00开放领取</td>
                             </tr>
                             <tr>
-                                <td class="t-content">2</td>
-                                <td class="t-content">50000</td>
-                                <td class="t-content">88</td>
+                                <td class="t-content">1万+</td>
+                                <td class="t-content">17元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">3</td>
-                                <td class="t-content">100000</td>
-                                <td class="t-content">138</td>
+                                <td class="t-content">5万+</td>
+                                <td class="t-content">57元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">4</td>
-                                <td class="t-content">500000</td>
-                                <td class="t-content">388</td>
+                                <td class="t-content">10万+</td>
+                                <td class="t-content">137元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">5</td>
-                                <td class="t-content">1000000</td>
-                                <td class="t-content">888</td>
+                                <td class="t-content">50万+</td>
+                                <td class="t-content">737元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">6</td>
-                                <td class="t-content">5000000</td>
-                                <td class="t-content">4888</td>
+                                <td class="t-content">200万+</td>
+                                <td class="t-content">2137元</td>
                             </tr>
                             <tr>
-                                <td class="t-content">7</td>
-                                <td class="t-content">10000000</td>
-                                <td class="t-content">8888</td>
+                                <td class="t-content">500万+</td>
+                                <td class="t-content">7137元</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <p>
+                    <span class="note-text">例：</span> 会员于开元棋牌游戏中投注50万元，次日即可领取737元棋牌得意金。<br />
+                    参加方式：登录账号 》优惠 》活动页面领取
+                </p>
 
                 <!-- CTA -->
                 <div class="flex-center">
@@ -72,10 +71,9 @@
                 <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
-                    <li>每月1号至当月最后一天，凡是在【电子游艺厅】月累计有效投注额达到对应等级，次月即可在活动页面领取对应彩金。</li>
-                    <li>该优惠按照达标的等级赠送一次，达标对应等级后便可在优惠页面点击领取，所获彩金仅需【三倍流水】即可取款。</li>
-                    <li>请于次月08点~ 次月最后一天24点前领取，逾期将无法领取该优惠。</li>
-                    <li>对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格。</li>
+                    <li>所获彩金仅需<span class="note-text">一倍流水</span>即可取款；</li>
+                    <li>符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠。</li>
+                    <li>对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格</li>
                     <li>此活动只适用于拥有一个账户的会员；每一位用户，每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
                     <li>为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
                 </ol>
@@ -98,7 +96,7 @@ const sendEvent = () => {
 }
 
 onMounted(() => {
-    console.log('ff_promo_05', props.msg)
+    console.log('ff_promo_10', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
     }

@@ -98,7 +98,7 @@ const s = {
     };
     n(() => {
       var M;
-      console.log("ff_promo_004", E.msg), (M = E.msg) != null && M.btnText && (N.value = !0);
+      console.log("ff_promo_05", E.msg), (M = E.msg) != null && M.btnText && (N.value = !0);
     });
     const N = o(!1), l = g(() => {
       var M;
@@ -169,5 +169,10 @@ const s = {
 };
 export {
   P as ff_promo_04,
-  F as ff_promo_05
+  F as ff_promo_05,
+  F as ff_promo_06,
+  F as ff_promo_07,
+  F as ff_promo_08,
+  F as ff_promo_09,
+  F as ff_promo_10
 };
