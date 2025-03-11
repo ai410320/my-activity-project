@@ -100,7 +100,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, defineEmits } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import '../../style.css'
 const props = defineProps({
     msg: Object,
@@ -112,13 +112,7 @@ const detailClick = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
 }
-const rangeDescription = computed(() => {
-    if (activityDuration.value == 1) {
-        return '长期活动'
-    } else if (activityDuration.value == 2) {
-        return `${dateFormat(activityStartTime)}至${dateFormat(activityEndTime)}`
-    }
-})
+
 onMounted(() => {
     console.log('ff_promo_004', props.msg)
     if (props.msg?.btnText) {
@@ -142,6 +136,13 @@ const activityStartTime = computed(() => {
 const activityEndTime = computed(() => {
     return props.msg?.activityEndTime
 })
+const rangeDescription = computed(() => {
+    if (activityDuration.value == 1) {
+        return '长期活动'
+    } else if (activityDuration.value == 2) {
+        return `${dateFormat(activityStartTime)}至${dateFormat(activityEndTime)}`
+    }
+})
 // 計算按鈕的 class
 const buttonClass = computed(() => {
     if (btnStatus.value === 3) return 'btn-disabled'
@@ -156,6 +157,8 @@ const dateFormat = (timeStamp) => {
     const day = String(date.getDate()).padStart(2, '0')
     console.log(`${year}-${month}-${day}`)
     console.log(timeStamp)
+    console.log(props.msg?.activityStartTime)
+    console.log(props.msg?.activityEndTime)
     return `${year}-${month}-${day}`
 }
 </script>
