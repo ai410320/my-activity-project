@@ -5,13 +5,13 @@
                 <img class="slogan-pc" src="./img/slogan_pc_05.webp" />
                 <img class="slogan-h5" src="./img/slogan_h5_05.webp" />
                 <div class="absolute promotion-time-range label-position mt-px--35 left-px-15 text-nowrap align-items-center label-font-size px-2 text-secondary l-spacing-0">
-                    <div id="timeRange"></div>
+                    <div id="timeRange">{{ rangeDescription }}</div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="./img/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">月累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
                 <div class="table-box">
                     <table>
@@ -64,12 +64,12 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a id="actionBtn" class="main-button btn-round flex-center" style="display: none">立即领取</a>
+                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
                 </div>
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="./img/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>每月1号至当月最后一天，凡是在【电子游艺厅】月累计有效投注额达到对应等级，次月即可在活动页面领取对应彩金。</li>
@@ -85,13 +85,55 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import '../../style.css'
-
-defineProps({
+const props = defineProps({
     msg: Object,
 })
+const emit = defineEmits(['updateClick'])
 
-const count = ref(0)
-console.log('ff_promo_05', props.msg)
+const sendEvent = () => {
+    console.log('testtest', props.msg)
+    emit('updateClick', '按鈕被點擊')
+}
+
+onMounted(() => {
+    console.log('ff_promo_004', props.msg)
+    if (props.msg?.btnText) {
+        isVisible.value = true
+    }
+})
+const isVisible = ref(false)
+const buttonText = computed(() => {
+    return props.msg?.btnText
+})
+const btnStatus = computed(() => {
+    return props.msg?.btnStatus
+})
+const activityDuration = computed(() => {
+    return props.msg?.activityDuration
+})
+const rangeDescription = computed(() => {
+    if (activityDuration.value == 1) {
+        return '长期活动'
+    } else if (activityDuration.value == 2) {
+        return `${dateFormat(props.msg?.activityStartTime)}至${dateFormat(props.msg?.activityEndTime)}`
+    }
+})
+// 計算按鈕的 class
+const buttonClass = computed(() => {
+    if (btnStatus.value === 3) return 'btn-disabled'
+    if (btnStatus.value === 2) return 'btn-opacity'
+    return 'btn-effect'
+})
+
+const dateFormat = (timeStamp) => {
+    const date = new Date(timeStamp)
+    const year = date.getFullYear()
+    const month = String(date.getMonth() + 1).padStart(2, '0')
+    const day = String(date.getDate()).padStart(2, '0')
+    console.log(`${year}-${month}-${day}`)
+    console.log(timeStamp)
+    return `${year}-${month}-${day}`
+}
 </script>

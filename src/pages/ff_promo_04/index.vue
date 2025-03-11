@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="./img/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">周累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
                 <div class="table-box">
                     <table>
@@ -79,12 +79,12 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" @click="detailClick()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
+                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
                 </div>
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="./img/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
@@ -107,8 +107,7 @@ const props = defineProps({
 })
 const emit = defineEmits(['updateClick'])
 
-const count = ref(0)
-const detailClick = () => {
+const sendEvent = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
 }
@@ -117,7 +116,6 @@ onMounted(() => {
     console.log('ff_promo_004', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
-        console.log('vvv', isVisible.value)
     }
 })
 const isVisible = ref(false)
@@ -129,12 +127,6 @@ const btnStatus = computed(() => {
 })
 const activityDuration = computed(() => {
     return props.msg?.activityDuration
-})
-const activityStartTime = computed(() => {
-    return props.msg?.activityStartTime
-})
-const activityEndTime = computed(() => {
-    return props.msg?.activityEndTime
 })
 const rangeDescription = computed(() => {
     if (activityDuration.value == 1) {
@@ -157,8 +149,6 @@ const dateFormat = (timeStamp) => {
     const day = String(date.getDate()).padStart(2, '0')
     console.log(`${year}-${month}-${day}`)
     console.log(timeStamp)
-    console.log(props.msg?.activityStartTime)
-    console.log(props.msg?.activityEndTime)
     return `${year}-${month}-${day}`
 }
 </script>
