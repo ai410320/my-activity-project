@@ -78,9 +78,9 @@
                 </div>
 
                 <!-- CTA -->
-                <div class="flex-center">
-                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="btnStatus[0]">{{ buttonText[0] }}</a>
-                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="btnStatus[1]">{{ buttonText[1] }}</a>
+                <div class="flex-evenly">
+                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding 1vw 5vw" :class="btnStatus[0]">{{ buttonText[0] }}</a>
+                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding 1vw 5vw" :class="btnStatus[1]">{{ buttonText[1] }}</a>
                 </div>
                 <!-- CTA end -->
             </div>
