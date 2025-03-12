@@ -216,8 +216,8 @@
     }
     .flex-evenly {
         display: flex;
-        justify-content: center;
-        align-items: space-evenly;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .note-text {
         color: #ef3e3e;
