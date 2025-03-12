@@ -27,54 +27,31 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="t-content">1</td>
-                                <td class="t-content">3000</td>
-                                <td class="t-content">8</td>
+                                <td class="t-content">100元</td>
+                                <td class="t-content">亏损金额的1%</td>
+                                <td class="t-content" rowspan="6">无上限</td>                      
+                                <td class="t-content" rowspan="6">每天早上8:00到24:00</br>开放领取</td>
+                            </tr>
+
+                            <tr>
+                                <td class="t-content">1000元</td>
+                                <td class="t-content">亏损金额的2%</td>
                             </tr>
                             <tr>
-                                <td class="t-content">2</td>
-                                <td class="t-content">5000</td>
-                                <td class="t-content">18</td>
+                                <td class="t-content">10000元</td>
+                                <td class="t-content">亏损金额的3%</td>
                             </tr>
                             <tr>
-                                <td class="t-content">3</td>
-                                <td class="t-content">10000</td>
-                                <td class="t-content">38</td>
+                                <td class="t-content">50000元</td>
+                                <td class="t-content">亏损金额的4%</td>
                             </tr>
                             <tr>
-                                <td class="t-content">4</td>
-                                <td class="t-content">30000</td>
-                                <td class="t-content">108</td>
+                                <td class="t-content">100000元</td>
+                                <td class="t-content">亏损金额的5%</td>
                             </tr>
                             <tr>
-                                <td class="t-content">5</td>
-                                <td class="t-content">50000</td>
-                                <td class="t-content">188</td>
-                            </tr>
-                            <tr>
-                                <td class="t-content">6</td>
-                                <td class="t-content">100000</td>
-                                <td class="t-content">288</td>
-                            </tr>
-                            <tr>
-                                <td class="t-content">7</td>
-                                <td class="t-content">300000</td>
-                                <td class="t-content">388</td>
-                            </tr>
-                            <tr>
-                                <td class="t-content">8</td>
-                                <td class="t-content">500000</td>
-                                <td class="t-content">888</td>
-                            </tr>
-                            <tr>
-                                <td class="t-content">9</td>
-                                <td class="t-content">1000000</td>
-                                <td class="t-content">1388</td>
-                            </tr>
-                            <tr>
-                                <td class="t-content">10</td>
-                                <td class="t-content">3000000</td>
-                                <td class="t-content">3888</td>
+                                <td class="t-content">200000元</td>
+                                <td class="t-content">亏损金额的6%</td>
                             </tr>
                         </tbody>
                     </table>
