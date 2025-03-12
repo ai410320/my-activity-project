@@ -39,7 +39,6 @@
                                 <td class="t-content">20万+</td>
                                 <td class="t-content">87元</td>
                             </tr>
-                            </tr>
                             <tr>
                                 <td class="t-content">50万+</td>
                                 <td class="t-content">277元</td>
@@ -79,7 +78,7 @@
 
                 <ol class="rules">
                    <li>周一至周日为一周期，凡是在<span class="note-text">棋牌游艺</span>周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                    <li>所获彩金仅需<span class="note-text"></span>【一倍流水】</span>即可取款。</li>
+                    <li>所获彩金仅需<span class="note-text"></span><span>【一倍流水】</span>即可取款。</li>
                     <li>符合领取条件的会员请在次周一24小时内进行领取，逾期将无法领取该优惠。</li>
                     <li>对于各种非正常投注行为，如无风险投汪、对冲等—经发现将取消优惠资格。</li>
                     <li>此活动只适用于拥有一个账户的会员；每一位用户，每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li> 
