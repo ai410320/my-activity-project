@@ -79,7 +79,8 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
+                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="btnStatus[0]">{{ buttonText[0] }}</a>
+                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="btnStatus[1]">{{ buttonText[1] }}</a>
                 </div>
                 <!-- CTA end -->
             </div>
@@ -107,24 +108,27 @@ const props = defineProps({
 })
 const emit = defineEmits(['updateClick'])
 
-const sendEvent = () => {
-    console.log('testtest', props.msg)
-    emit('updateClick', '按鈕被點擊')
+const additionalBtnEvent = () => {
+    emit('updateClick', { action: 'ADDITIONAL_BONUS' })
 }
-
+const returnBtnEvent = () => {
+    emit('updateClick', { action: 'RETURN_BONUS' })
+}
+const buttonText = [ref(''), ref('')]
+const btnStatus = [ref(''), ref('')]
+const isVisible = ref(false)
 onMounted(() => {
-    console.log('ff_promo_004', props.msg)
+    console.log('ff_promo_16', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
     }
+    buttonText.value[0] = props.msg?.totalBtnStatus[0] ? '已领取回归彩金' : '申请回归彩金'
+    buttonText.value[1] = props.msg?.totalBtnStatus[1] ? '已领取加赠彩金' : '申请加赠彩金'
+    btnStatus.forEach((btnStatus, index) => {
+        btnStatus.value = props.msg?.totalBtnStatus[index] ? 'btn-disabled' : 'btn-effect'
+    })
 })
-const isVisible = ref(false)
-const buttonText = computed(() => {
-    return props.msg?.btnText
-})
-const btnStatus = computed(() => {
-    return props.msg?.btnStatus
-})
+
 const activityDuration = computed(() => {
     return props.msg?.activityDuration
 })
@@ -134,12 +138,6 @@ const rangeDescription = computed(() => {
     } else if (activityDuration.value == 2) {
         return `${dateFormat(props.msg?.activityStartTime)}至${dateFormat(props.msg?.activityEndTime)}`
     }
-})
-// 計算按鈕的 class
-const buttonClass = computed(() => {
-    if (btnStatus.value === 3) return 'btn-disabled'
-    if (btnStatus.value === 2) return 'btn-opacity'
-    return 'btn-effect'
 })
 
 const dateFormat = (timeStamp) => {
