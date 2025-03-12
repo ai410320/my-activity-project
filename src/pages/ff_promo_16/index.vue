@@ -122,10 +122,10 @@ onMounted(() => {
     if (props.msg?.btnText) {
         isVisible.value = true
     }
-    buttonText.value[0] = props.msg?.totalBtnStatus[0] ? '已领取回归彩金' : '申请回归彩金'
-    buttonText.value[1] = props.msg?.totalBtnStatus[1] ? '已领取加赠彩金' : '申请加赠彩金'
+    buttonText.value[0] = props.msg?.specialActivityParam[0] ? '已领取回归彩金' : '申请回归彩金'
+    buttonText.value[1] = props.msg?.specialActivityParam[1] ? '已领取加赠彩金' : '申请加赠彩金'
     btnStatus.forEach((btnStatus, index) => {
-        btnStatus.value = props.msg?.totalBtnStatus[index] ? 'btn-disabled' : 'btn-effect'
+        btnStatus.value = props.msg?.specialActivityParam[index] ? 'btn-disabled' : 'btn-effect'
     })
 })
 
