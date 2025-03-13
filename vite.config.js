@@ -4,6 +4,7 @@ import Pages from 'vite-plugin-pages'
 import vue from '@vitejs/plugin-vue'
 import postcssPresetEnv from 'postcss-preset-env'
 import cssnano from 'cssnano'
+import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -24,6 +25,11 @@ export default defineConfig({
                 postcssPresetEnv(),
                 cssnano({ preset: 'default' }), // 改用 cssnano 來壓縮 CSS
             ],
+        },
+    },
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
         },
     },
     base: '/my-activity-project/',

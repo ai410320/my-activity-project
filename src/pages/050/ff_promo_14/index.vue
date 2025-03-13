@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p>活动内容：<span class="platform-name">希尔顿</span>将不定期派发神秘彩金给予所有的玩家，彩金没有门槛限制、不设上限金额，只要您在<span class="platform-name">希尔顿</span>有注册过账号，只要您曾经登录过<span class="platform-name">希尔顿</span>，就算您不曾在我公司存款游戏过，都有可能收到我们为您随机派发的惊喜彩金！</p>
                 <div class="table-box">
                     <table>
@@ -32,7 +32,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>凡是获得神秘奖金的会员，我们将在彩金存入会员账号或绑定之银行账号后，通过账号绑定的电话进行通知，彩金发放纯属随机，还望会员能多多关注支持<span class="platform-name">希尔顿</span>，祝您成为下一个幸运儿！</li>
@@ -48,7 +48,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

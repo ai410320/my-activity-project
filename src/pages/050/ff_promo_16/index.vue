@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">周累计投注</span>额达到相应等级，即可<span class="note-text">获得相应彩金</span>。</p>
                 <div class="table-box">
                     <table>
@@ -85,7 +85,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
@@ -102,7 +102,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

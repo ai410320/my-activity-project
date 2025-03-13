@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p>
                     活动内容：单日存款<span class="note-text">100元</span>以上投注任意棋牌游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取棋牌亏损救援彩金，彩金无上限！
                 </p>
@@ -69,7 +69,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>所获得彩金只需<span class="note-text">1倍流水</span>即可取款。</li>
@@ -85,7 +85,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

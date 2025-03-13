@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p>活动内容：即日起会员于棋牌游戏当日有效投注2137元+，次日即可获得棋牌得意金，祝您“棋”开得胜，最高可获<span class="note-text">7137元彩金</span>！</p>
                 <div class="table-box">
                     <table>
@@ -68,7 +68,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>所获彩金仅需<span class="note-text">一倍流水</span>即可取款；</li>
@@ -84,7 +84,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

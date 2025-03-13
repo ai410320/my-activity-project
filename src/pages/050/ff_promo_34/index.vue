@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间, <span class="text-warning">首充</span>达到指定要求, 即可获得最高<span class="text-warning">8,888元</span>礼金！</p>
                 <div class="table-box">
                     <table>
@@ -65,7 +65,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>活动开始后，您注册后将自动参加。您需要在首次充值并达到充值金额要求。</li>
@@ -84,7 +84,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

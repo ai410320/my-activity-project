@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间, 全体新会员下载<span class="text-gold fw-600">【PG电子APP】</span>登录，注册下载APP满7天加赠<span class="text-warning fw-600">1888元</span>回馈彩金，注册下载满20天加赠<span class="text-warning fw-600">8888元</span>回馈礼金。</p>
                 <div class="table-box">
                     <table>
@@ -116,7 +116,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>符合条件的会员请在<span class="text-warning fw-600">注册30天内</span>到活动页面领取，逾期视为放弃。</li>
@@ -134,7 +134,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

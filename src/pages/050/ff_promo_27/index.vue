@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
 
                 <p><span class="text-highlight">活动内容：</span>凡本娱乐城的用户，使用USDT数字币充值的会员，每笔数字币充值即可额外获得<span class="note-text">2%</span>彩金。</p>
             </div>
@@ -82,7 +82,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

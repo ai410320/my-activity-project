@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>为答谢新老用户，特设定周一专场活动，活动期间，上周会员累计<span class="note-text">存款达到≥500元</span>，<span class="note-text">周一当日存款累计≥100元</span>，即可获得平台专宠返利金，充值越高获得彩金最多! <span class="note-text">最高588专宠彩金</span>等您来拿，仅需<span class="note-text">1倍流水</span>即可出款!</p>
                 <div class="table-box">
                     <table>
@@ -64,7 +64,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>所获得奖金需<span class="note-text">1倍流水</span>即可取款；</li>
@@ -81,7 +81,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

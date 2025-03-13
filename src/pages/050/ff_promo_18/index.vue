@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>凡是在<span class="platform-name">五彩堂</span>投注电子单量累计<span class="note-text">100个注单量</span>或以上，次日即可获得最高平均下注金额<span class="note-text">20倍</span>彩金，开启极速游戏模式，轻松赚取免单彩金！</p>
                 <div class="table-box m-hide m-landscape-show">
                     <table>
@@ -114,7 +114,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>所获得彩金只需<span class="note-text">2倍流水</span>方可申请提款；</li>
@@ -131,7 +131,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

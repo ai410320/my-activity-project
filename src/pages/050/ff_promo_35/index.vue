@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间, 全体新会员下载<span class="text-gold fw-600">【PG电子APP】</span>登录，第二次单笔存款<span class="text-warning fw-600">100元以上</span>，即可获得最高<span class="text-warning fw-600">1888元</span>存款回馈金，您还在等什么？快来告诉您的亲朋好友一起参与吧！</p>
                 <div class="table-box">
                     <table>
@@ -59,7 +59,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>活动开始后，您注册后将自动参加。您需要第二次充值并达到充值金额要求。</li>
@@ -78,7 +78,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>会员于<span class="platform-name">五彩堂</span>电子游艺中，只要单个注单派彩金额超过500元，即可获得加赠彩金最高17777元！</p>
                 <div class="table-box">
                     <table>
@@ -73,7 +73,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
                 <ol class="rules">
                     <li>所获得彩金只需1倍流水方可申请提款；</li>
                     <li>每天可申请1次，每个注单仅限申请1次，天数按照美东时间进行计算。</li>
@@ -89,7 +89,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

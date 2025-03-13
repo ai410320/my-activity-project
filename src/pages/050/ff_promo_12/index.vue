@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p>
                     活动内容：凡在<span class="platform-name">希尔顿</span>棋牌游艺中，7天累计有效投注达1万或以上即可领取周周彩金，最高可达<span class="note-text">11137元</span>！
                 </p>
@@ -74,7 +74,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                    <li>周一至周日为一周期，凡是在<span class="note-text">棋牌游艺</span>周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
@@ -91,7 +91,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

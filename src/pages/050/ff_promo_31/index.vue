@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p>
                     即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="note-text">1.0%</span>的返水且无上限<br />
                     当天（00:00:00-23:59:59）的有效投注额，会在第二天上午7点前自动洗码，自动添加到帐。
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>本娱乐城提供业界最高返水优惠活动，如发现会员进行非法炒水或是利用非法软件等形式进行投注或伙同代理套利，将永远冻结账号以及没收所有结余。</li>
@@ -89,7 +89,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })

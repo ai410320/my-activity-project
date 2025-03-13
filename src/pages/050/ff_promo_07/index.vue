@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title1.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title1.svg" /></div>
                 <p><span class="text-highlight">活动内容：</span>活动期间，会员在【电子游艺厅】<span class="note-text">周负盈利</span>达到相应等级，即可<span class="note-text">获得相应救援金</span>。</p>
                 <div class="table-box">
                     <table>
@@ -69,7 +69,7 @@
                 <!-- CTA end -->
             </div>
             <div class="promo-content">
-                <div class="flex-center"><img class="img-title" src="../../public/images/promo_title2.svg" /></div>
+                <div class="flex-center"><img class="img-title" src="@/public/images/promo_title2.svg" /></div>
 
                 <ol class="rules">
                     <li>周一至周日为一周期，凡是在【电子游艺厅】周累计负盈利达到对应等级，次周一早上8点即可在活动页面领取对应彩金。</li>
@@ -90,7 +90,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '../../style.css'
+import '@/style.css'
 const props = defineProps({
     msg: Object,
 })
