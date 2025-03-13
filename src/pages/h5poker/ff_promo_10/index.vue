@@ -3,7 +3,7 @@
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
-                <div class="ml-1" id="timeRange" style="color: #999999"></div>
+                <div class="ml-1" id="timeRange" style="color: #999999">{{ rangeDescription }}</div>
             </div>
         </div>
 
@@ -76,7 +76,7 @@
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
-                        <div v-if="isSpin" class="spinner" id="spinner"></div>
+                        <div v-if="isSpin" class="spinner" id="spinner" style="display: block"></div>
                         <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
                     </div>
                 </div>
@@ -126,9 +126,10 @@ const sendEvent = () => {
 
 const isSpin = ref(false)
 const isVisible = ref(false)
-const buttonText = computed(() => {
-    return props.msg?.btnText
-})
+// const buttonText = computed(() => {
+//     return props.msg?.btnText
+// })
+const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus
 })
