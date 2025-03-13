@@ -1181,11 +1181,11 @@
 
     /* font-size/ color */
     .font-size-13px {
-        font-size: 3.466667vw;
+        font-size: 3.466667vw !important;
         font-weight: 400;
     }
     .font-size-34px {
-        font-size: 4.8vw;
+        font-size: 4.8vw !important;
         font-weight: bold;
     }
 
@@ -1193,16 +1193,16 @@
         font-weight: bold;
     }
     .text-brown {
-        color: #7e602a;
+        color: #7e602a !important;
     }
     .text-yellow {
-        color: #fbb937;
+        color: #fbb937 !important;
     }
     .text-white {
-        color: #cfcfcf;
+        color: #cfcfcf !important;
     }
     .text-danger {
-        color: #ff4c46;
+        color: #ff4c46 !important;
     }
     .text-c {
         text-align: center;
