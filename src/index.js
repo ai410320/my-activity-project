@@ -8,9 +8,8 @@
 
 // export { ff_promo_04, ff_promo_05, ff_promo_06, ff_promo_07, ff_promo_08, ff_promo_09, ff_promo_10 }
 
-const modules = import.meta.glob('./pages/ff_promo_*/index.vue', { eager: true })
 const modules050 = import.meta.glob('./pages/050/ff_promo_*/index.vue', { eager: true })
-const modulesKY = import.meta.glob('./pages/ky/ff_promo_*/index.vue', { eager: true })
+const modulesH5poker = import.meta.glob('./pages/h5poker/ff_promo_*/index.vue', { eager: true })
 
 function generateComponentMap(modules) {
     return Object.keys(modules).reduce((acc, path) => {
@@ -21,8 +20,8 @@ function generateComponentMap(modules) {
 }
 
 const module050 = generateComponentMap(modules050)
-const moduleKY = generateComponentMap(modulesKY)
+const moduleKyH5Black = generateComponentMap(modulesH5poker)
 // console.log('4646464', module050)
 
-export { module050, moduleKY }
+export { module050, modulesH5poker }
 // export default { module050, moduleKY }
