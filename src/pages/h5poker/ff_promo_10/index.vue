@@ -76,7 +76,7 @@
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
-                        <div v-if="isSpin" class="spinner" id="spinner" style="display: block"></div>
+                        <div class="spinner" id="spinner" style="display: block"></div>
                         <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
                     </div>
                 </div>
@@ -121,11 +121,11 @@ const sendEvent = () => {
     setTimeout(() => {
         buttonText.value = props.msg?.btnText
         isSpin.value = false
-    }, 2000)
+    }, 1000)
 }
 
 const isSpin = ref(false)
-const isVisible = ref(false)
+
 // const buttonText = computed(() => {
 //     return props.msg?.btnText
 // })
