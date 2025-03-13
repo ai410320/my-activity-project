@@ -20,8 +20,8 @@ function generateComponentMap(modules) {
 }
 
 const module050 = generateComponentMap(modules050)
-const moduleKyH5Black = generateComponentMap(modulesH5poker)
+const moduleH5poker = generateComponentMap(modulesH5poker)
 // console.log('4646464', module050)
 
-export { module050, modulesH5poker }
+export { module050, moduleH5poker }
 // export default { module050, moduleKY }
