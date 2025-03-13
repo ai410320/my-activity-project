@@ -76,8 +76,8 @@
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
-                        <div class="spinner" id="spinner" style="display: none"></div>
-                        <span id="btnText">申请彩金</span>
+                        <div v-if="isSpin" class="spinner" id="spinner"></div>
+                        <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
                     </div>
                 </div>
             </div>
@@ -116,14 +116,15 @@ const emit = defineEmits(['updateClick'])
 const sendEvent = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
+    buttonText.value = '加载中...'
+    isSpin.value = true
+    setTimeout(() => {
+        buttonText.value = props.msg?.btnText
+        isSpin.value = false
+    }, 2000)
 }
 
-onMounted(() => {
-    console.log('ff_promo_10', props.msg)
-    if (props.msg?.btnText) {
-        isVisible.value = true
-    }
-})
+const isSpin = ref(false)
 const isVisible = ref(false)
 const buttonText = computed(() => {
     return props.msg?.btnText

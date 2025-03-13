@@ -3,7 +3,7 @@
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
-                <div class="ml-1" id="timeRange" style="color: #999999"></div>
+                <div class="ml-1" id="timeRange" style="color: #999999">{{ rangeDescription }}</div>
             </div>
         </div>
 
@@ -85,8 +85,8 @@
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
-                        <div class="spinner" id="spinner" style="display: none"></div>
-                        <span id="btnText">申请彩金</span>
+                        <div v-if="isSpin" class="spinner" id="spinner"></div>
+                        <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
                     </div>
                 </div>
             </div>
@@ -126,10 +126,18 @@ const emit = defineEmits(['updateClick'])
 const sendEvent = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
+    buttonText.value = '加载中...'
+    isSpin.value = true
+    setTimeout(() => {
+        buttonText.value = props.msg?.btnText
+        isSpin.value = false
+    }, 2000)
 }
 
+const isSpin = ref(false)
+
 onMounted(() => {
-    console.log('ff_promo_10', props.msg)
+    console.log('ff_promo_04', props.msg)
     if (props.msg?.btnText) {
         isVisible.value = true
     }
