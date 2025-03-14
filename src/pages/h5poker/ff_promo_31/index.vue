@@ -15,29 +15,24 @@
                         活动内容
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important;">
-                            即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="text-danger">1.0%</span>的返水
-                        </li>
-                        <li style="list-style: disc !important;">
-                            当天（00:00:00-23:59:59）的有效投注额，会在第二天上午7点前自动洗码，自动添加到帐。
-                        </li>
-
+                        <li style="list-style: disc !important">即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="text-danger">1.0%</span>的返水</li>
+                        <li style="list-style: disc !important">当天（00:00:00-23:59:59）的有效投注额，会在第二天上午7点前自动洗码，自动添加到帐。</li>
                     </ul>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
                         <table class="text-c font-size-13px" width="100%">
                             <thead>
-                                <tr class="height-px-40 text-brown ">
-                                    <th class="th-border-radius thead1" width=15% rowspan="2">每日有效投注（流水）</th>
-                                    <th class="th-border-radius thead1" width=42.5% colspan="5">洗码优惠比例</th>
+                                <tr class="height-px-40 text-brown">
+                                    <th class="th-border-radius thead1" width="15%" rowspan="2">每日有效投注（流水）</th>
+                                    <th class="th-border-radius thead1" width="42.5%" colspan="5">洗码优惠比例</th>
                                 </tr>
                                 <tr class="height-px-40 text-brown">
-                                    <th class="t-title thead1 thead-border"><b>真人</th>
-                                    <th class="t-title thead1 thead-border"><b>电子</b></th>    
-                                    <th class="t-title thead1 thead-border"><b>体育</b></th>   
-                                    <th class="t-title thead1 thead-border"><b>捕鱼&棋牌</b></th>    
-                                    <th class="t-title thead1 "><b>彩票</b></th>                  
+                                    <th class="t-title thead1 thead-border"><b>真人</b></th>
+                                    <th class="t-title thead1 thead-border"><b>电子</b></th>
+                                    <th class="t-title thead1 thead-border"><b>体育</b></th>
+                                    <th class="t-title thead1 thead-border"><b>捕鱼&棋牌</b></th>
+                                    <th class="t-title thead1"><b>彩票</b></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,27 +81,13 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important;">
-                            本娱乐城提供业界最高返水优惠活动，如发现会员进行非法炒水或是利用非法软件等形式进行投注或伙同代理套利，将永远冻结账号以及没收所有结余。
-                        </li>
-                        <li style="list-style: disc !important;">
-                            会员同一住址、同一账号、同一姓名、同一提款账号、同一电话或同一IP等相同者，我们将视为同一人，若本娱乐城在发现会员有重复申请账号进行套取彩金之行为时，保留取消、收回会员所有优惠彩金及没收该会员账号内余额的权利，每位玩家、每一住址、每一电子邮箱、每一电话号码、相同支付卡/信用卡号、同一IP、以及共享电脑环境（例如网吧或其它公用电脑等）
-                        </li>
-                        <li style="list-style: disc !important;">
-                            无论是个人或是团体，如有任何威胁，滥用本娱乐城赠送彩金优惠的行为，经财务审查及活动策划组发现，本娱乐城保留权利取消/收回优惠以及优惠产生之盈利。
-                        </li>
-                        <li style="list-style: disc !important;">
-                            投注在体育，对冲或对打投注不计，未接受注单/赛果为平的注单不计，在真人/电子无风险投注不计。无风险投注包括在百家乐同时投注庄家、闲家、轮盘同时投注黑色、单、双、大、小、任何取消注单赛事或局数不计。
-                        </li>
-                        <li style="list-style: disc !important;">
-                            所有本娱乐城的优惠是特别为玩家而设，在玩家注册资讯有争议时，为确保双方利益，杜绝身份盗用行为，本平台保留权利要求客户提供充足有效证件，并与各种方式辨别客户是否符合资格享有本娱乐城的任何优惠。
-                        </li>
-                        <li style="list-style: disc !important;">
-                            为防止红利猎人套利，任何造成活动终止或者影响其他会员权利，无论会员层级，若经查询后有任何滥用及红利之行为，本公司保留权利取消所有优惠，该注单以及注单所产生的红利，并停用会员之权利，本娱乐城不承担对此做出任何说明及解释之责任。
-                        </li>
-                        <li style="list-style: disc !important;">
-                            本娱乐城保留所有权利在任何时候都可以更改、停止、取消优惠活动。
-                        </li>
+                        <li style="list-style: disc !important">本娱乐城提供业界最高返水优惠活动，如发现会员进行非法炒水或是利用非法软件等形式进行投注或伙同代理套利，将永远冻结账号以及没收所有结余。</li>
+                        <li style="list-style: disc !important">会员同一住址、同一账号、同一姓名、同一提款账号、同一电话或同一IP等相同者，我们将视为同一人，若本娱乐城在发现会员有重复申请账号进行套取彩金之行为时，保留取消、收回会员所有优惠彩金及没收该会员账号内余额的权利，每位玩家、每一住址、每一电子邮箱、每一电话号码、相同支付卡/信用卡号、同一IP、以及共享电脑环境（例如网吧或其它公用电脑等）</li>
+                        <li style="list-style: disc !important">无论是个人或是团体，如有任何威胁，滥用本娱乐城赠送彩金优惠的行为，经财务审查及活动策划组发现，本娱乐城保留权利取消/收回优惠以及优惠产生之盈利。</li>
+                        <li style="list-style: disc !important">投注在体育，对冲或对打投注不计，未接受注单/赛果为平的注单不计，在真人/电子无风险投注不计。无风险投注包括在百家乐同时投注庄家、闲家、轮盘同时投注黑色、单、双、大、小、任何取消注单赛事或局数不计。</li>
+                        <li style="list-style: disc !important">所有本娱乐城的优惠是特别为玩家而设，在玩家注册资讯有争议时，为确保双方利益，杜绝身份盗用行为，本平台保留权利要求客户提供充足有效证件，并与各种方式辨别客户是否符合资格享有本娱乐城的任何优惠。</li>
+                        <li style="list-style: disc !important">为防止红利猎人套利，任何造成活动终止或者影响其他会员权利，无论会员层级，若经查询后有任何滥用及红利之行为，本公司保留权利取消所有优惠，该注单以及注单所产生的红利，并停用会员之权利，本娱乐城不承担对此做出任何说明及解释之责任。</li>
+                        <li style="list-style: disc !important">本娱乐城保留所有权利在任何时候都可以更改、停止、取消优惠活动。</li>
                     </ul>
                 </div>
             </div>
