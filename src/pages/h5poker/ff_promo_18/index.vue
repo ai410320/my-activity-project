@@ -14,71 +14,49 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">活动期间，会员在【电子游艺厅】<span class="text-danger">周累计投注</span>额达到相应等级，即可获得相应彩金。</p>
+                    <p class="text-white font-size-13px mt-3">活动期间，凡是在【电子游艺厅】投注电子单量累计<span class="text-danger">500个注单量</span>或以上，次日即可获得最高平均下注金额<span class="text-danger">20倍</span>彩金，开启极速游戏模式，轻松赚取免单彩金！</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
                         <table class="text-c font-size-13px" width="100%">
                             <thead>
                                 <tr class="height-px-40 text-brown">
-                                    <th class="th-border-radius" width="15%">阶梯</th>
-                                    <th class="th-border-radius" width="42.5%">周有效投注额</th>
-                                    <th class="th-border-radius" width="42.5%">奖励金额</th>
+                                    <th class="th-border-radius" width="25%">注单量</th>
+                                    <th class="th-border-radius" width="42%">可获彩金</th>
+                                    <th class="th-border-radius" width="33%">派发方式</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">1</td>
-                                    <td class="table-bordered">3000</td>
-                                    <td class="table-bordered">8</td>
+                                    <td class="table-bordered">500+</td>
+                                    <td class="table-bordered">平均下注金额X5倍</td>
+                                    <td class="pd-1 table-bordered" rowspan="9">
+                                        次日 <br /><br />
+                                        <span class="text-danger">8:00 ~ 24:00</span><br /><br />开放领取
+                                    </td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">2</td>
-                                    <td class="table-bordered">5000</td>
-                                    <td class="table-bordered">18</td>
+                                    <td class="table-bordered">1000+</td>
+                                    <td class="table-bordered">平均下注金额X8倍</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">3</td>
-                                    <td class="table-bordered">10000</td>
-                                    <td class="table-bordered">38</td>
+                                    <td class="table-bordered">5000+</td>
+                                    <td class="table-bordered">平均下注金额X10倍</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">4</td>
-                                    <td class="table-bordered">30000</td>
-                                    <td class="table-bordered">108</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">5</td>
-                                    <td class="table-bordered">50000</td>
-                                    <td class="table-bordered">188</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">6</td>
-                                    <td class="table-bordered">100000</td>
-                                    <td class="table-bordered">288</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">7</td>
-                                    <td class="table-bordered">300000</td>
-                                    <td class="table-bordered">388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">8</td>
-                                    <td class="table-bordered">500000</td>
-                                    <td class="table-bordered">888</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">9</td>
-                                    <td class="table-bordered">1000000</td>
-                                    <td class="table-bordered">1388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">10</td>
-                                    <td class="table-bordered">3000000</td>
-                                    <td class="table-bordered">3888</td>
+                                    <td class="table-bordered">10000+</td>
+                                    <td class="table-bordered">平均下注金额X20倍</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div>
+                        <p class="text-white font-size-13px">
+                            <span class="text-danger">注</span>：平均下注金额 = 电子总有效投注 / 投注单量<br />
+                            <span class="text-danger">例</span>：CQ9电子中累计注单量为2000个，平均下注金额100元，次日即可领取100X2=200元。
+                        </p>
                     </div>
                 </div>
 
@@ -100,9 +78,9 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                        <li style="list-style: disc !important">该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-danger">【五倍流水】</span>即可取款。</li>
-                        <li style="list-style: disc !important">请于次周日24点前领取彩金，迫期将无法领取该优惠。</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">1倍</span>流水方可申请提款。</li>
+                        <li style="list-style: disc !important">此活动仅限投注电子的会员方可参与。</li>
+                        <li style="list-style: disc !important">每位会员每天仅限领取一次，符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠。</li>
                         <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等一经发现将取消优惠资格。</li>
                         <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
                         <li style="list-style: disc !important">为避免文字差异，平台保留对本活动的最終解释权，并旦有权更改．延迟或取消活动。</li>
@@ -133,7 +111,7 @@ const sendEvent = () => {
     setTimeout(() => {
         buttonText.value = props.msg?.btnText
         isSpin.value = false
-    }, 2000)
+    }, 1000)
 }
 
 const isSpin = ref(false)
@@ -142,13 +120,6 @@ const getStyle = (index) => ({
     transform: `translate(-50%, -50%) rotate(${(index - 1) * 30}deg) translateY(-7px)`,
     animationDelay: `${(index - 1) * 0.1}s`,
 })
-onMounted(() => {
-    console.log('ff_promo_04', props.msg)
-    if (props.msg?.btnText) {
-        isVisible.value = true
-    }
-})
-const isVisible = ref(false)
 const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus

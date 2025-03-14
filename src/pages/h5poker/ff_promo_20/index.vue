@@ -14,71 +14,58 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">活动期间，会员在【电子游艺厅】<span class="text-danger">周累计投注</span>额达到相应等级，即可获得相应彩金。</p>
+                    <p class="text-white font-size-13px mt-3">活动期间，单日存款<span class="text-danger">100元</span>以上投注任意电子游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取电子亏损救援彩金，彩金无上限！</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
                         <table class="text-c font-size-13px" width="100%">
                             <thead>
                                 <tr class="height-px-40 text-brown">
-                                    <th class="th-border-radius" width="15%">阶梯</th>
-                                    <th class="th-border-radius" width="42.5%">周有效投注额</th>
-                                    <th class="th-border-radius" width="42.5%">奖励金额</th>
+                                    <th class="th-border-radius" width="33.3%">亏损金额</th>
+                                    <th class="th-border-radius" width="33.3%">可获救援彩金</th>
+                                    <th class="th-border-radius" width="33.3%">派发方式</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">1</td>
-                                    <td class="table-bordered">3000</td>
-                                    <td class="table-bordered">8</td>
+                                    <td class="table-bordered">100元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">1%</span></td>
+                                    <td class="table-bordered" rowspan="9">
+                                        次日 <br /><br />
+                                        <span class="text-danger">08:00 ~ 24:00</span> <br /><br />开放领取
+                                    </td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">2</td>
-                                    <td class="table-bordered">5000</td>
-                                    <td class="table-bordered">18</td>
+                                    <td class="table-bordered">1000元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">2%</span></td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">3</td>
-                                    <td class="table-bordered">10000</td>
-                                    <td class="table-bordered">38</td>
+                                    <td class="table-bordered">10000元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">3%</span></td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">4</td>
-                                    <td class="table-bordered">30000</td>
-                                    <td class="table-bordered">108</td>
+                                    <td class="table-bordered">50000元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">4%</span></td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">5</td>
-                                    <td class="table-bordered">50000</td>
-                                    <td class="table-bordered">188</td>
+                                    <td class="table-bordered">100000元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">5%</span></td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">6</td>
-                                    <td class="table-bordered">100000</td>
-                                    <td class="table-bordered">288</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">7</td>
-                                    <td class="table-bordered">300000</td>
-                                    <td class="table-bordered">388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">8</td>
-                                    <td class="table-bordered">500000</td>
-                                    <td class="table-bordered">888</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">9</td>
-                                    <td class="table-bordered">1000000</td>
-                                    <td class="table-bordered">1388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">10</td>
-                                    <td class="table-bordered">3000000</td>
-                                    <td class="table-bordered">3888</td>
+                                    <td class="table-bordered">200000元</td>
+                                    <td class="table-bordered">亏损金额的<span class="text-danger">6%</span></td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div>
+                        <p class="text-white font-size-13px mt-1">
+                            <span class="text-danger">优惠金定义：</span>平台返水、优惠彩金。<br />
+                            <span class="text-danger">例</span>：当日总存款1000元；总优惠10元；总领取返水10元；当日在电子游戏中负利1000元<br />
+                            救援金 =（1000 输值-10 优惠红利 - 10 返水红利）x 会员对应比例
+                        </p>
                     </div>
                 </div>
 
@@ -100,12 +87,11 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                        <li style="list-style: disc !important">该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-danger">【五倍流水】</span>即可取款。</li>
-                        <li style="list-style: disc !important">请于次周日24点前领取彩金，迫期将无法领取该优惠。</li>
-                        <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等一经发现将取消优惠资格。</li>
-                        <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
-                        <li style="list-style: disc !important">为避免文字差异，平台保留对本活动的最終解释权，并旦有权更改．延迟或取消活动。</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">1倍</span>流水方可申请提款。</li>
+                        <li style="list-style: disc !important">符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠；</li>
+                        <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
+                        <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个电话号码、相同支付方式及IP地址仅限享受一次</li>
+                        <li style="list-style: disc !important">为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
                     </ul>
                 </div>
             </div>
@@ -133,7 +119,7 @@ const sendEvent = () => {
     setTimeout(() => {
         buttonText.value = props.msg?.btnText
         isSpin.value = false
-    }, 2000)
+    }, 1000)
 }
 
 const isSpin = ref(false)
@@ -142,13 +128,6 @@ const getStyle = (index) => ({
     transform: `translate(-50%, -50%) rotate(${(index - 1) * 30}deg) translateY(-7px)`,
     animationDelay: `${(index - 1) * 0.1}s`,
 })
-onMounted(() => {
-    console.log('ff_promo_04', props.msg)
-    if (props.msg?.btnText) {
-        isVisible.value = true
-    }
-})
-const isVisible = ref(false)
 const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus
