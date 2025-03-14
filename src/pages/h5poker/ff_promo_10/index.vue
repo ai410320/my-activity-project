@@ -76,7 +76,9 @@
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
-                        <div class="spinner" id="spinner" style="display: block"></div>
+                        <div v-if="isSpin" class="spinner" id="spinner">
+                            <div v-for="n in 12" :key="n" :style="getStyle(n)"></div>
+                        </div>
                         <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
                     </div>
                 </div>
@@ -126,9 +128,10 @@ const sendEvent = () => {
 
 const isSpin = ref(false)
 
-// const buttonText = computed(() => {
-//     return props.msg?.btnText
-// })
+const getStyle = (index) => ({
+    transform: `translate(-50%, -50%) rotate(${(index - 1) * 30}deg) translateY(-7px)`,
+    animationDelay: `${(index - 1) * 0.1}s`,
+})
 const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus
