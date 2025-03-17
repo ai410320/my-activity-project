@@ -79,8 +79,14 @@
 
                 <!-- CTA -->
                 <div class="flex-evenly">
-                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[0]">{{ buttonText[0] }}</a>
-                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[1]">{{ buttonText[1] }}</a>
+                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[0]">
+                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                        {{ buttonText[0] }}
+                    </a>
+                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[1]">
+                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                        {{ buttonText[1] }}
+                    </a>
                 </div>
                 <!-- CTA end -->
             </div>
@@ -110,10 +116,24 @@ const emit = defineEmits(['updateClick'])
 
 const additionalBtnEvent = () => {
     emit('updateClick', { action: 'ADDITIONAL_BONUS' })
+    buttonText[0].value = '加载中...'
+    isSpin[1].value = true
+    setTimeout(() => {
+        buttonText[1].value = props.msg?.btnText
+        isSpin[1].value = false
+    }, 1000)
 }
 const returnBtnEvent = () => {
     emit('updateClick', { action: 'RETURN_BONUS' })
+    buttonText[0].value = '加载中...'
+    isSpin[0].value = true
+    setTimeout(() => {
+        buttonText[0].value = props.msg?.btnText
+        isSpin[0].value = false
+    }, 1000)
 }
+
+const isSpin = [ref(false), ref(false)]
 const buttonText = [ref(''), ref('')]
 const btnStatus = [ref(''), ref('')]
 const isVisible = ref(false)

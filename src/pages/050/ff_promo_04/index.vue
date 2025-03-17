@@ -80,7 +80,7 @@
                 <!-- CTA -->
                 <div class="flex-center">
                     <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">
-                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />加载中...
+                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
                         {{ buttonText }}
                     </a>
                 </div>

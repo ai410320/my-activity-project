@@ -59,7 +59,10 @@
                 <p>例如：会员上周累计存款5,000元，当天该会员存款累计为1,000元，则可获得58元专宠彩金</p>
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
+                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">
+                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                        {{ buttonText }}
+                    </a>
                 </div>
                 <!-- CTA end -->
             </div>
@@ -87,9 +90,17 @@ const props = defineProps({
 })
 const emit = defineEmits(['updateClick'])
 
+const isSpin = ref(false)
+
 const sendEvent = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
+    buttonText.value = '加载中...'
+    isSpin.value = true
+    setTimeout(() => {
+        buttonText.value = props.msg?.btnText
+        isSpin.value = false
+    }, 1000)
 }
 
 onMounted(() => {
@@ -99,9 +110,7 @@ onMounted(() => {
     }
 })
 const isVisible = ref(false)
-const buttonText = computed(() => {
-    return props.msg?.btnText
-})
+const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus
 })
