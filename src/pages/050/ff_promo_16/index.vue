@@ -80,11 +80,11 @@
                 <!-- CTA -->
                 <div class="flex-evenly">
                     <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[0]">
-                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                        <img v-if="isSpin[0]" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
                         {{ buttonText[0] }}
                     </a>
                     <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[1]">
-                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                        <img v-if="isSpin[1]" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
                         {{ buttonText[1] }}
                     </a>
                 </div>
