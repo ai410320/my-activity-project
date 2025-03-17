@@ -14,6 +14,10 @@
             "import": "./dist/module050.es.js",
             "require": "./dist/module050.cjs.js"
         },
+        "./moduleH5poker": {
+            "import": "./dist/moduleH5poker.es.js",
+            "require": "./dist/moduleH5poker.cjs.js"
+        },
         "./style.css": {
             "default": "./dist/style.css"
         }

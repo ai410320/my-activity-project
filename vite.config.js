@@ -20,7 +20,7 @@ export default defineConfig({
             extensions: ['vue'],
         }),
         visualizer({
-            open: true, // 讓分析結果自動打開瀏覽器
+            // open: true, // 讓分析結果自動打開瀏覽器
             filename: 'stats.html', // 產生的分析報告
             gzipSize: true, // 顯示 gzip 後的大小
             brotliSize: true, // 顯示 brotli 後的大小
@@ -46,6 +46,7 @@ export default defineConfig({
             entry: {
                 main: './src/index.js', // 入口檔案
                 module050: './src/modules/module050.js', // 確保 module050.js 被輸出
+                moduleH5poker: './src/modules/moduleH5poker.js', // 確保 moduleH5poker.js
             },
             name: 'TaskModule',
             formats: ['es', 'cjs'], // 輸出 ES Module

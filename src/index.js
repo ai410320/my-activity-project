@@ -15,4 +15,4 @@
 // export { module050, moduleH5poker }
 
 export { module050 } from './modules/module050.js'
-export { moduleH5poker } from './moduleH5poker.js'
+export { moduleH5poker } from './modules/moduleH5poker.js'
