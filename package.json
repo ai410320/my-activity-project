@@ -5,6 +5,9 @@
     "type": "module",
     "main": "dist/task-module.cjs",
     "module": "dist/task-module.js",
+    "exports": {
+        "./module050": "./dist/modules/module050.js"
+    },
     "scripts": {
         "dev": "vite",
         "build": "vite build",

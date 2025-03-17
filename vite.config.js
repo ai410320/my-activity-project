@@ -43,10 +43,14 @@ export default defineConfig({
     build: {
         cssCodeSplit: false, // 確保 CSS 不是分割的
         lib: {
-            entry: './src/index.js', // 專案入口
+            entry: {
+                main: './src/index.js', // 入口檔案
+                module050: './src/modules/module050.js', // 確保 module050.js 被輸出
+            },
             name: 'TaskModule',
             formats: ['es', 'cjs'], // 輸出 ES Module
-            fileName: 'task-module',
+            // fileName: 'task-module',
+            fileName: (format, entryName) => `${entryName}.${format}.js`, // 讓 module050.js 有自己的輸出檔案
         },
         rollupOptions: {
             external: ['vue'], // 將 Vue 排除，防止打包到輸出文件中
