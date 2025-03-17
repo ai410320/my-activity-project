@@ -78,13 +78,14 @@
                 </div>
 
                 <!-- CTA -->
+
                 <div class="flex-evenly">
-                    <a v-if="isVisible" @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[0]">
-                        <img v-if="isSpin[0]" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                    <a @click="returnBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[0].value">
+                        <img v-if="isSpin[0].value" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
                         {{ buttonText[0] }}
                     </a>
-                    <a v-if="isVisible" @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[1]">
-                        <img v-if="isSpin[1]" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
+                    <a @click="additionalBtnEvent()" id="actionBtn" class="main-button btn-round flex-center" style="padding: 1vw 5vw" :class="btnStatus[1].value">
+                        <img v-if="isSpin[1].value" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />
                         {{ buttonText[1] }}
                     </a>
                 </div>
@@ -116,10 +117,11 @@ const emit = defineEmits(['updateClick'])
 
 const additionalBtnEvent = () => {
     emit('updateClick', { action: 'ADDITIONAL_BONUS' })
-    buttonText[0].value = '加载中...'
+    buttonText[1].value = '加载中...'
     isSpin[1].value = true
     setTimeout(() => {
         buttonText[1].value = props.msg?.btnText
+        btnStatus[1].value = props.msg?.specialActivityParam[1] ? 'btn-disabled' : 'btn-effect'
         isSpin[1].value = false
     }, 1000)
 }
@@ -129,6 +131,7 @@ const returnBtnEvent = () => {
     isSpin[0].value = true
     setTimeout(() => {
         buttonText[0].value = props.msg?.btnText
+        btnStatus[0].value = props.msg?.specialActivityParam[0] ? 'btn-disabled' : 'btn-effect'
         isSpin[0].value = false
     }, 1000)
 }
