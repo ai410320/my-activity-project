@@ -80,7 +80,7 @@
                 <!-- CTA -->
                 <div class="flex-center">
                     <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">
-                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 30px" />
+                        <img v-if="isSpin" src="@/public/images/spin_white.webp" alt="" style="width: 18px" />加载中...
                         {{ buttonText }}
                     </a>
                 </div>
@@ -130,9 +130,7 @@ onMounted(() => {
     }
 })
 const isVisible = ref(false)
-const buttonText = computed(() => {
-    return props.msg?.btnText
-})
+const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus
 })
