@@ -13,6 +13,9 @@
         "./module050": {
             "import": "./dist/module050.es.js",
             "require": "./dist/module050.cjs.js"
+        },
+        "./style.css": {
+            "default": "./dist/style.css"
         }
     },
     "scripts": {
