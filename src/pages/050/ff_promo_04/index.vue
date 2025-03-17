@@ -79,7 +79,10 @@
 
                 <!-- CTA -->
                 <div class="flex-center">
-                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">{{ buttonText }}</a>
+                    <a v-if="isVisible" @click="sendEvent()" id="actionBtn" class="main-button btn-round flex-center" :class="buttonClass">
+                        <img src="@/public/images/spin_white.webp" alt="" style="width: 30px" />
+                        {{ buttonText }}
+                    </a>
                 </div>
                 <!-- CTA end -->
             </div>
@@ -107,9 +110,17 @@ const props = defineProps({
 })
 const emit = defineEmits(['updateClick'])
 
+const isSpin = ref(false)
+
 const sendEvent = () => {
     console.log('testtest', props.msg)
     emit('updateClick', '按鈕被點擊')
+    buttonText.value = '加载中...'
+    isSpin.value = true
+    setTimeout(() => {
+        buttonText.value = props.msg?.btnText
+        isSpin.value = false
+    }, 1000)
 }
 
 onMounted(() => {
