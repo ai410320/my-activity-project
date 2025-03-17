@@ -120,7 +120,7 @@ const additionalBtnEvent = () => {
     buttonText[1].value = '加载中...'
     isSpin[1].value = true
     setTimeout(() => {
-        buttonText[1].value = props.msg?.btnText
+        buttonText[1].value = props.msg?.specialActivityParam[1] ? '已领取加赠彩金' : '申请加赠彩金'
         btnStatus[1].value = props.msg?.specialActivityParam[1] ? 'btn-disabled' : 'btn-effect'
         isSpin[1].value = false
     }, 1000)
@@ -130,7 +130,7 @@ const returnBtnEvent = () => {
     buttonText[0].value = '加载中...'
     isSpin[0].value = true
     setTimeout(() => {
-        buttonText[0].value = props.msg?.btnText
+        buttonText[0].value = props.msg?.specialActivityParam[0] ? '已领取回归彩金' : '申请回归彩金'
         btnStatus[0].value = props.msg?.specialActivityParam[0] ? 'btn-disabled' : 'btn-effect'
         isSpin[0].value = false
     }, 1000)
