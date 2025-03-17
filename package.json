@@ -6,7 +6,14 @@
     "main": "dist/task-module.cjs",
     "module": "dist/task-module.js",
     "exports": {
-        "./module050": "./dist/modules/module050.js"
+        ".": {
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.cjs.js"
+        },
+        "./module050": {
+            "import": "./dist/module050.es.js",
+            "require": "./dist/module050.cjs.js"
+        }
     },
     "scripts": {
         "dev": "vite",
