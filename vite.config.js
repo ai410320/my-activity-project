@@ -5,7 +5,6 @@ import vue from '@vitejs/plugin-vue'
 import postcssPresetEnv from 'postcss-preset-env'
 import cssnano from 'cssnano'
 import path from 'path'
-import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,12 +17,6 @@ export default defineConfig({
         Pages({
             dirs: 'src/pages',
             extensions: ['vue'],
-        }),
-        visualizer({
-            // open: true, // 讓分析結果自動打開瀏覽器
-            filename: 'stats.html', // 產生的分析報告
-            gzipSize: true, // 顯示 gzip 後的大小
-            brotliSize: true, // 顯示 brotli 後的大小
         }),
     ],
     css: {
