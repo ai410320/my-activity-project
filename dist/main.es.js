@@ -1,4 +1,4 @@
-import { loadComponent as p } from "./module050.es.js";
+import { module050 as p } from "./module050.es.js";
 import { moduleH5poker as d } from "./moduleH5poker.es.js";
 import "vue";
 import "./style.8ae2acf7.js";
