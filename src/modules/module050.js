@@ -16,8 +16,8 @@ function loadComponent(name) {
     // 只載入符合 `ff_promo_XX` 的模組
 
     const match = Object.keys(modules050).find((path) => path.includes(name))
-    console.log('wewewewewe', modules050, match, name, modules050[match], modules050[match](), modules050[match].default())
-    return match ? modules050[match].default : null
+    console.log('wewewewewe', modules050, match, name, modules050[match], modules050[match]())
+    return match ? modules050[match]() : null
 }
 
 export { loadComponent }
