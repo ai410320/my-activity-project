@@ -14,8 +14,9 @@ const modules050 = import.meta.glob('@/pages/050/ff_promo_*/index.vue')
 // export const module050 = generateComponentMap(modules050)
 function loadComponent(name) {
     // 只載入符合 `ff_promo_XX` 的模組
-    console.log('wewewewewe', modules050)
+
     const match = Object.keys(modules050).find((path) => path.includes(name))
+    console.log('wewewewewe', modules050, match, name)
     return match ? modules050[match] : null
 }
 
