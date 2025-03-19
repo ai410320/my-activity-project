@@ -1,8 +1,6 @@
-import { loadComponent as e } from "./module050.es.js";
-import { moduleH5poker as d } from "./moduleH5poker.es.js";
-import "vue";
-import "./ff_promo_bundle.57a6c99d.js";
+import { loadComponent as p } from "./module050.es.js";
+import { h5pokerLoadComponent as m } from "./moduleH5poker.es.js";
 export {
-  e as loadComponent,
-  d as moduleH5poker
+  m as h5pokerLoadComponent,
+  p as loadComponent
 };

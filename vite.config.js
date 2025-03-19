@@ -54,7 +54,10 @@ export default defineConfig({
                 },
                 manualChunks(id) {
                     if (id.includes('/pages/050/')) {
-                        return 'ff_promo_bundle' // 讓所有 ff_promo_XX 的 chunk 合併成一個 bundle
+                        return 'ff_promo_bundle_050' // 讓所有 ff_promo_XX 的 chunk 合併成一個 bundle
+                    }
+                    if (id.includes('/pages/h5poker/')) {
+                        return 'ff_promo_bundle_h5poker' // 讓所有 ff_promo_XX 的 chunk 合併成一個 bundle
                     }
                 },
             },

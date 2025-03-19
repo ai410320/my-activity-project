@@ -17,4 +17,4 @@
 // export { module050 } from './modules/module050.js'
 export { loadComponent } from './modules/module050.js'
 // export { module050 } from './modules/module050.js'
-export { moduleH5poker } from './modules/moduleH5poker.js'
+export { h5pokerLoadComponent } from './modules/moduleH5poker.js'
