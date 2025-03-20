@@ -274,7 +274,7 @@
     .kv {
         background-repeat: no-repeat;
         background-position: center top;
-        background-image: url(./public/images/bg.webp);
+        background-image: url(@/public/images/bg.webp);
         background-size: 100% 500px;
     }
 
@@ -569,7 +569,7 @@
     @media only screen and (max-width: 1180px) {
         .kv {
             background-size: cover;
-            background-image: url(./public/images/bg_h5.webp);
+            background-image: url(@/public/images/bg_h5.webp);
         }
         .container {
             padding-bottom: 1rem;
@@ -641,7 +641,7 @@
 
         .kv {
             background-size: cover;
-            background-image: url(./public/images/bg_h5.webp);
+            background-image: url(@/public/images/bg_h5.webp);
         }
         .slogan-pc {
             display: none;

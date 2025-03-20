@@ -112,7 +112,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '@/style.css'
+import '@/style/h5poker/style.css'
 const props = defineProps({
     msg: Object,
 })

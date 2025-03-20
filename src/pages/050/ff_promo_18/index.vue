@@ -134,7 +134,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import '@/style.css'
+import '@/style/050/style.css'
 const props = defineProps({
     msg: Object,
 })
