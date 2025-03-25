@@ -71,7 +71,7 @@
 
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
-                    <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
+                    <div id="actionBtn" class="van-button van-button--secondary btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
                         <div v-if="isSpin" class="spinner" id="spinner">
                             <div v-for="n in 12" :key="n" :style="getStyle(n)"></div>
                         </div>

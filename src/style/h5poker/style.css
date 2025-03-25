@@ -459,8 +459,8 @@
     }
     .btn-fill-primary {
         text-decoration: none;
-        color: #7e602a;
-        background: linear-gradient(180deg, #f1e8ce 31.6%, #bb9169 100.74%);
+        /* color: #7e602a;
+        background: linear-gradient(180deg, #f1e8ce 31.6%, #bb9169 100.74%); */
         border-radius: 100rem;
         overflow: hidden;
         font-weight: 600;
@@ -468,8 +468,8 @@
         transition: all 0.5s;
     }
     .btn-fill-primary.disabled-gray {
-        background: linear-gradient(180deg, #bdbdbd 31.6%, #5f5c58 100%);
-        color: #2c2b28;
+        /* background: linear-gradient(180deg, #bdbdbd 31.6%, #5f5c58 100%);
+        color: #2c2b28; */
     }
 
     /* padding/ margin */
