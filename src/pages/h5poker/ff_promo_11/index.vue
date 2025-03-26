@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 3vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -14,7 +14,7 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">活动期间，单日存款<span class="text-danger">100元</span>以上投注任意棋牌游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取棋牌亏损救援彩金，彩金无上限！</p>
+                    <p class="text-white font-size-13px mt-3">活动期间，单日存款<span class="text-yellow">100元</span>以上投注任意棋牌游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取棋牌亏损救援彩金，彩金无上限！</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
@@ -32,7 +32,7 @@
                                     <td class="table-bordered">1%</td>
                                     <td class="pd-1 table-bordered" rowspan="6">
                                         次日 <br /><br />
-                                        <span class="text-danger">08:00 ~ 24:00</span><br />
+                                        <span class="text-yellow">08:00 ~ 24:00</span><br />
                                         <br />开放领取
                                     </td>
                                 </tr>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="mt-4">
                     <div>
-                        <span class="font-size-13px line-height-24px text-danger mt-3"> 优惠金定义： </span>
+                        <span class="font-size-13px line-height-24px text-yellow mt-3"> 优惠金定义： </span>
                         <span class="text-white font-size-13px">全平台的返水、优惠彩金</span>
                         <p class="text-white font-size-13px"><span class="text-danger">例</span>：当日总存款1000元；总优惠10元；总领取返水10元；当日在棋牌游戏中负利1000元救援金 =（1000 输值-10 优惠红利 - 10 返水红利）x 会员对应比例</p>
                     </div>
@@ -94,7 +94,7 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">1倍流水</span>方可申请提款；</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-yellow">1倍流水</span>方可申请提款；</li>
                         <li style="list-style: disc !important">符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠；</li>
                         <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
                         <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个电话号码、相同支付方式及IP地址仅限享受一次;</li>

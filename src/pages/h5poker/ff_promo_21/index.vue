@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 3vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -14,7 +14,7 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">会员于本平台电子游艺中，只要单个注单派彩金额超过500元，即可获得加赠彩金最高<span class="text-danger">17777元</span>！</p>
+                    <p class="text-white font-size-13px mt-3">会员于本平台电子游艺中，只要单个注单派彩金额超过500元，即可获得加赠彩金最高<span class="text-yellow">17777元</span>！</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
@@ -105,7 +105,7 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">3倍</span>流水方可申请提款；</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-yellow">1倍</span>流水方可申请提款；</li>
                         <li style="list-style: disc !important">每天可申请1次，每个注单仅限申请1次，天数按照美东时问进行计算。</li>
                         <li style="list-style: disc !important">所中奖的注单需在24点前进行申请，逾期视为自动放弃优惠。</li>
                         <li style="list-style: disc !important">电子游艺中赠送给您的免费抽奖机会所产生的注单，并不作为参与本次活动的有效注单，以及任何原因投注额小于1元，均不具备参与本次活动</li>

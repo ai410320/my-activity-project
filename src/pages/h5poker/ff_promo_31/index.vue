@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 3vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -15,7 +15,7 @@
                         活动内容
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="text-danger">1.0%</span>的返水</li>
+                        <li style="list-style: disc !important">即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="text-yellow">1.0%</span>的返水</li>
                         <li style="list-style: disc !important">当天（00:00:00-23:59:59）的有效投注额，会在第二天上午7点前自动洗码，自动添加到帐。</li>
                     </ul>
                 </div>

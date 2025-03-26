@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 3vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
         <div class="kv corner-radius-12px relative">
             <div class="absolute promotion-time-range px-3">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -14,7 +14,7 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">凡在棋牌游艺中，7天累计有效投注达1万或以上即可领取周周彩金，最高可达<span class="text-danger">11137元！</span></p>
+                    <p class="text-white font-size-13px mt-3">凡在棋牌游艺中，7天累计有效投注达1万或以上即可领取周周彩金，最高可达<span class="text-yellow">11137元！</span></p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
@@ -32,7 +32,7 @@
                                     <td class="table-bordered">7</td>
                                     <td class="pd-1 table-bordered" rowspan="9">
                                         每周一 <br /><br />
-                                        <span class="text-danger">08:00</span><br />
+                                        <span class="text-yellow">08:00</span><br />
                                         <br />开放领取
                                     </td>
                                 </tr>
@@ -92,7 +92,7 @@
                     </p>
                     <ul class="font-size-13px text-white mt-2">
                         <li style="list-style: disc !important">周一至周日为一周期，凡是在【棋牌游艺】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金;</li>
-                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">【3倍流水】</span>方可申请提款；</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-yellow">【3倍流水】</span>方可申请提款；</li>
                         <li style="list-style: disc !important">符合领取条件的会员请在次周一24小时内进行领取，逾期将无法领取该优惠;</li>
                         <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
                         <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户，每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次;</li>
