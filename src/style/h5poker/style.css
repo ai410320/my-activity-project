@@ -339,11 +339,18 @@
     }
 
     .promotion-time-range {
-        font-size: 3.2vw;
-        bottom: 1.5vw;
+        font-size: 11px;
+        height: 17px;
+        padding: 0px 10px;
         left: 0;
+        bottom: 2px;
         display: flex;
         align-items: center;
+        border-radius: 0px 10px 0px 0px;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+        border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(65deg, rgba(0, 0, 0, 0) 4.02%, rgba(0, 0, 0, 0.25) 32.15%, rgba(0, 0, 0, 0.35) 63.5%);
+        z-index: 1;
     }
     .time-icon {
         width: 2.666667vw;
@@ -351,9 +358,10 @@
     }
     .content-border {
         padding: 1rem;
-        border: 0.5px solid #ebebeb1a;
+        /* border: 0.5px solid #ebebeb1a; */
         border-radius: 3.2vw;
         background: #282729;
+        border: 1px solid #363337;
     }
 
     /* 整體 Spinner 容器 */
@@ -382,8 +390,8 @@
         position: fixed;
         right: 0px;
         bottom: 60px;
-        width: 33.33vw;
-        height: 33.33vw;
+        width: 19.73vw;
+        height: 27.2vw;
     }
 
     /* font-size/ color */
@@ -403,13 +411,13 @@
         color: #7e602a !important;
     }
     .text-yellow {
-        color: #fbb937 !important;
+        color: #ffb039 !important;
     }
     .text-white {
         color: #cfcfcf !important;
     }
     .text-danger {
-        color: #ff4c46 !important;
+        color: #ff423c !important;
     }
     .text-c {
         text-align: center;

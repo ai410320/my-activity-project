@@ -1,9 +1,9 @@
 <template>
     <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 3vw">
-        <div class="kv corner-radius-12px relative">
-            <div class="absolute promotion-time-range px-3">
+        <div class="kv relative">
+            <div class="absolute promotion-time-range">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
-                <div class="ml-1" id="timeRange" style="color: #999999">{{ rangeDescription }}</div>
+                <div class="ml-1" id="timeRange" style="color: #cececf">{{ rangeDescription }}長期活動</div>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
                         <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
                         活动内容
                     </p>
-                    <p class="text-white font-size-13px mt-3">活动期间，单日存款<span class="text-danger">100元</span>以上投注任意电子游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取电子亏损救援彩金，彩金无上限！</p>
+                    <p class="text-white font-size-13px mt-3">活动期间，单日存款<span class="text-yellow">100元</span>以上投注任意电子游戏，单日负盈利扣除所有获取优惠金额后亏损金额100以上，次日即可领取电子亏损救援彩金，彩金无上限！</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
@@ -29,31 +29,31 @@
                             <tbody>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">100元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">1%</span></td>
+                                    <td class="table-bordered">亏损金额的1%</td>
                                     <td class="table-bordered" rowspan="9">
                                         次日 <br /><br />
-                                        <span class="text-danger">08:00 ~ 24:00</span> <br /><br />开放领取
+                                        <span class="text-yellow">08:00 ~ 24:00</span> <br /><br />开放领取
                                     </td>
                                 </tr>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">1000元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">2%</span></td>
+                                    <td class="table-bordered">亏损金额的2%</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">10000元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">3%</span></td>
+                                    <td class="table-bordered">亏损金额的3%</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">50000元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">4%</span></td>
+                                    <td class="table-bordered">亏损金额的4%</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">100000元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">5%</span></td>
+                                    <td class="table-bordered">亏损金额的5%</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
                                     <td class="table-bordered">200000元</td>
-                                    <td class="table-bordered">亏损金额的<span class="text-danger">6%</span></td>
+                                    <td class="table-bordered">亏损金额的6%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -62,7 +62,7 @@
                 <div class="mt-4">
                     <div>
                         <p class="text-white font-size-13px mt-1">
-                            <span class="text-danger">优惠金定义：</span>平台返水、优惠彩金。<br />
+                            <span class="text-yellow">优惠金定义：</span>平台返水、优惠彩金。<br />
                             <span class="text-danger">例</span>：当日总存款1000元；总优惠10元；总领取返水10元；当日在电子游戏中负利1000元<br />
                             救援金 =（1000 输值-10 优惠红利 - 10 返水红利）x 会员对应比例
                         </p>
@@ -87,7 +87,7 @@
                         活动规则
                     </p>
                     <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">所获得彩金只需<span class="text-danger">1倍</span>流水方可申请提款。</li>
+                        <li style="list-style: disc !important">所获得彩金只需<span class="text-yellow">3倍</span>流水方可申请提款。</li>
                         <li style="list-style: disc !important">符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠；</li>
                         <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
                         <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个电话号码、相同支付方式及IP地址仅限享受一次</li>
@@ -166,11 +166,21 @@ const dateFormat = (timeStamp) => {
         background-position: center top !important;
         background-image: url(./img/head1.webp) !important;
         background-size: 100% 34.6667vw !important;
-        margin-right: 4vw;
-        margin-left: 4vw;
+        /* margin-right: 4vw;
+        margin-left: 4vw; */
         margin-top: 4vw;
         /* width: 92vw; */
         height: 34.666667vw;
+    }
+    .kv::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%; /* 可調整漸層高度 */
+        background: linear-gradient(to bottom, rgba(17, 30, 131, 0) 3.48%, #101a32 96.51%);
+        pointer-events: none;
     }
 }
 </style>
