@@ -1,9 +1,9 @@
 <template>
     <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
-        <div class="kv corner-radius-12px relative">
-            <div class="absolute promotion-time-range px-3">
+        <div class="kv relative">
+            <div class="absolute promotion-time-range">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
-                <div class="ml-1" id="timeRange" style="color: #999999">每周一</div>
+                <div class="ml-1" id="timeRange" style="color: #cececf">每周一</div>
             </div>
         </div>
 
