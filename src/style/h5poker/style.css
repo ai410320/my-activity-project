@@ -376,7 +376,7 @@
         position: absolute;
         width: 0.4vw;
         height: 1.067vw;
-        background: #7e602a;
+        background: #fff;
         border-radius: 20px;
         opacity: 0.2;
         top: 50%; /* 設定起始位置為中心 */
