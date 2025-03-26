@@ -3,7 +3,7 @@
         <div class="kv relative">
             <div class="absolute promotion-time-range">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
-                <div class="ml-1" id="timeRange" style="color: #cececf">{{ rangeDescription }}長期活動</div>
+                <div class="ml-1" id="timeRange" style="color: #cececf">{{ rangeDescription }}</div>
             </div>
         </div>
 
@@ -71,7 +71,7 @@
 
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
-                    <div id="actionBtn" class="van-button van-button--secondary btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
+                    <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
                         <div v-if="isSpin" class="spinner" id="spinner">
                             <div v-for="n in 12" :key="n" :style="getStyle(n)"></div>
                         </div>
