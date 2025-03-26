@@ -171,11 +171,21 @@ const dateFormat = (timeStamp) => {
         background-position: center top !important;
         background-image: url(./img/head1.webp) !important;
         background-size: 100% 34.6667vw !important;
-        margin-right: 4vw;
-        margin-left: 4vw;
+        /* margin-right: 4vw;
+        margin-left: 4vw; */
         margin-top: 4vw;
         /* width: 92vw; */
         height: 34.666667vw;
+    }
+    .kv::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%; /* 可調整漸層高度 */
+        background: linear-gradient(to bottom, rgba(17, 30, 131, 0) 3.48%, #101a32 96.51%);
+        pointer-events: none;
     }
 }
 </style>
