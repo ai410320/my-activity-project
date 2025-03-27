@@ -173,6 +173,7 @@ const dateFormat = (timeStamp) => {
         margin-top: 4vw;
         /* width: 92vw; */
         height: 34.666667vw;
+        z-index: -1;
     }
     .kv::after {
         content: '';
@@ -183,6 +184,7 @@ const dateFormat = (timeStamp) => {
         height: 20%; /* 可調整漸層高度 */
         background: linear-gradient(to bottom, rgba(17, 30, 131, 0) 3.48%, #101a32 96.51%);
         pointer-events: none;
+        z-index: -1;
     }
 }
 </style>
