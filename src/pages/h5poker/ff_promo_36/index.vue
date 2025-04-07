@@ -155,10 +155,6 @@ const dateFormat = (timeStamp) => {
         background-position: center top !important;
         background-image: url(./img/head1.webp) !important;
         background-size: 100% 34.6667vw !important;
-        /* margin-right: 4vw;
-        margin-left: 4vw; */
-        margin-top: 4vw;
-        /* width: 92vw; */
         height: 34.666667vw;
         z-index: -1;
     }
