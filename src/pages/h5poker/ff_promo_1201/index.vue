@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw">
         <div class="kv relative">
             <div class="absolute promotion-time-range">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -10,10 +10,7 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <p class="font-size-34px fw-bold text-gold-gradient">
-                        <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
-                        活动内容
-                    </p>
+                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
                     <p class="text-white font-size-13px mt-3">活动期间，会员在【棋牌游艺厅】<span class="text-yellow">周累计投注</span>额达到相应等级，即可获得相应彩金。</p>
                 </div>
                 <div class="mt-4">
@@ -94,19 +91,16 @@
             </div>
 
             <div class="content-border mt-3">
-                <div>
-                    <p class="font-size-34px fw-bold mt-1" style="background: linear-gradient(130.13deg, #dfc191 6.56%, #fff3ce 44.78%, #bb9169 96.4%); -webkit-background-clip: text; color: transparent">
-                        <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
-                        活动规则
-                    </p>
-                    <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">周一至周日为一周期，凡是在【棋牌游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                        <li style="list-style: disc !important">该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-yellow">【3倍流水】</span>即可取款。</li>
-                        <li style="list-style: disc !important">请于次周日24点前领取彩金，迫期将无法领取该优惠。</li>
-                        <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等一经发现将取消优惠资格。</li>
-                        <li style="list-style: disc !important">此活动只适用于拥有一个账户的会员；每一位用户、每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
-                        <li style="list-style: disc !important">为避免文字差异，平台保留对本活动的最終解释权，并旦有权更改．延迟或取消活动。</li>
-                    </ul>
+                <div class="mt-1">
+                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <ol class="font-size-13px text-white mt-2">
+                        <li>周一至周日为一周期，凡是在【棋牌游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
+                        <li>该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-yellow">【3倍流水】</span>即可取款。</li>
+                        <li>请于次周日24点前领取彩金，迫期将无法领取该优惠。</li>
+                        <li>对于各种非正常投注行为，如无风险投注、对冲等一经发现将取消优惠资格。</li>
+                        <li>此活动只适用于拥有一个账户的会员；每一位用户、每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
+                        <li>为避免文字差异，平台保留对本活动的最終解释权，并旦有权更改．延迟或取消活动。</li>
+                    </ol>
                 </div>
             </div>
 

@@ -11,74 +11,67 @@
             <div class="content-border">
                 <div class="mt-1">
                     <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
-                    <p class="text-white font-size-13px mt-3">活动期间，会员在【电子游艺厅】<span class="text-yellow">周累计投注</span>额达到相应等级，即可获得相应彩金。</p>
+                    <p class="text-white font-size-13px mt-3">活动期间, 全体新会员<span class="text-yellow">【下载APP】</span>登录，注册新会员后，完成<span class="text-yellow">电子游戏</span>有效投注，可获得新人优享<span class="text-yellow">1888元</span>。</p>
                 </div>
                 <div class="mt-4">
                     <div class="bg-gradient-bottom-dark-01 mt-1 relative">
                         <table class="text-c font-size-13px" width="100%">
                             <thead>
                                 <tr class="height-px-40 text-brown">
-                                    <th class="th-border-radius" width="15%">阶梯</th>
-                                    <th class="th-border-radius" width="42.5%">周有效投注额</th>
-                                    <th class="th-border-radius" width="42.5%">奖励金额</th>
+                                    <th class="th-border-radius" width="25%">存款金额</th>
+                                    <th class="th-border-radius" width="25%">有效投注</th>
+                                    <th class="th-border-radius" width="25%">赠送彩金</th>
+                                    <th class="th-border-radius" width="25%">
+                                        <b>累计可获<br />得奖金</b>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">1</td>
-                                    <td class="table-bordered">3000</td>
-                                    <td class="table-bordered">8</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
+                                    <td class="t-content" rowspan="7">10元+</td>
+                                    <td class="table-bordered">≥100</td>
                                     <td class="table-bordered">2</td>
-                                    <td class="table-bordered">5000</td>
-                                    <td class="table-bordered">18</td>
+                                    <td class="table-bordered">2</td>
                                 </tr>
                                 <tr class="table-bordered text-white">
-                                    <td class="table-bordered">3</td>
-                                    <td class="table-bordered">10000</td>
-                                    <td class="table-bordered">38</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">4</td>
-                                    <td class="table-bordered">30000</td>
-                                    <td class="table-bordered">108</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">5</td>
-                                    <td class="table-bordered">50000</td>
-                                    <td class="table-bordered">188</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">6</td>
-                                    <td class="table-bordered">100000</td>
-                                    <td class="table-bordered">288</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">7</td>
-                                    <td class="table-bordered">300000</td>
-                                    <td class="table-bordered">388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥1,000</td>
                                     <td class="table-bordered">8</td>
-                                    <td class="table-bordered">500000</td>
-                                    <td class="table-bordered">888</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
-                                    <td class="table-bordered">9</td>
-                                    <td class="table-bordered">1000000</td>
-                                    <td class="table-bordered">1388</td>
-                                </tr>
-                                <tr class="table-bordered text-white">
                                     <td class="table-bordered">10</td>
-                                    <td class="table-bordered">3000000</td>
-                                    <td class="table-bordered">3888</td>
+                                </tr>
+                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥10,000</td>
+                                    <td class="table-bordered">18</td>
+                                    <td class="table-bordered">28</td>
+                                </tr>
+                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥50,000</td>
+                                    <td class="table-bordered">88</td>
+                                    <td class="table-bordered">116</td>
+                                </tr>
+                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥200,000</td>
+                                    <td class="table-bordered">188</td>
+                                    <td class="table-bordered">304</td>
+                                </tr>
+                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥500,000</td>
+                                    <td class="table-bordered">388</td>
+                                    <td class="table-bordered">692</td>
+                                </tr>
+                                <tr class="table-bordered text-white">
+                                    <td class="table-bordered">≥1,000,000</td>
+                                    <td class="table-bordered">1196</td>
+                                    <td class="table-bordered">1888</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
+                <div class="mt-4">
+                    <div>
+                        <p class="text-white font-size-13px"><span class="text-danger">例：</span>会员存款10元，有效投注达到5万+，即可申请2+8+18+88=116元奖金。以此类推！</p>
+                    </div>
+                </div>
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
                     <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
@@ -94,12 +87,13 @@
                 <div class="mt-1">
                     <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
                     <ol class="font-size-13px text-white mt-2">
-                        <li>周一至周日为一周期，凡是在【电子游艺厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
-                        <li>该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-yellow">【3倍流水】</span>即可取款。</li>
-                        <li>请于次周日24点前领取彩金，迫期将无法领取该优惠。</li>
-                        <li>对于各种非正常投注行为，如无风险投注、对冲等一经发现将取消优惠资格。</li>
-                        <li>此活动只适用于拥有一个账户的会员；每一位用户、每一个住址、每一个电话号码、相同支付方式及IP地址仅限享受一次。</li>
-                        <li>为避免文字差异，平台保留对本活动的最終解释权，并旦有权更改．延迟或取消活动。</li>
+                        <li>符合条件的会员请在<span class="text-yellow">注册7天内</span>到活动页面领取，逾期视为放弃。</li>
+                        <li>
+                            获得的活动彩金<span class="text-yellow"><span class="washTime">1倍</span>流水</span>，即可直接提款。
+                        </li>
+                        <li>所有因任何因素被取消之注单，或因中奖后彩金加码游戏所产生之单号，均不在计算范围之内。</li>
+                        <li>会员参与活动均由系统自动统计，若有任何异议，以平台查询结果为准；</li>
+                        <li>为避免文字理解差异，我司保留此活动的最终解释权，以及在无通知的情况下修改，终止活动的权利。</li>
                     </ol>
                 </div>
             </div>
@@ -127,7 +121,7 @@ const sendEvent = () => {
     setTimeout(() => {
         buttonText.value = props.msg?.btnText
         isSpin.value = false
-    }, 2000)
+    }, 1000)
 }
 
 const isSpin = ref(false)
@@ -136,13 +130,6 @@ const getStyle = (index) => ({
     transform: `translate(-50%, -50%) rotate(${(index - 1) * 30}deg) translateY(-7px)`,
     animationDelay: `${(index - 1) * 0.1}s`,
 })
-onMounted(() => {
-    console.log('ff_promo_04', props.msg)
-    if (props.msg?.btnText) {
-        isVisible.value = true
-    }
-})
-const isVisible = ref(false)
 const buttonText = ref(props.msg?.btnText)
 const btnStatus = computed(() => {
     return props.msg?.btnStatus

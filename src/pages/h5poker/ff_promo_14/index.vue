@@ -1,5 +1,5 @@
 <template>
-    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw; margin-top: 11.7vw">
+    <div id="h5poker-promo-detail" class="corner-radius-20px" style="padding-bottom: 1vw">
         <div class="kv relative">
             <div class="absolute promotion-time-range">
                 <img class="time-icon" src="@/public/images/activity_time_log@2x.webp" alt="" />
@@ -10,10 +10,7 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <p class="font-size-34px fw-bold text-gold-gradient">
-                        <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
-                        活动内容
-                    </p>
+                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
                     <p class="text-white font-size-13px mt-3">上周会员累计<span class="text-yellow">存款达到≥500元，周一当日存款累计≥100元</span>，即可获得平台专宠返利金，充值越高获得彩金最多! <span class="text-yellow">最高588专宠彩金</span>等您来拿，仅需<span class="text-yellow">3倍流水</span>即可出款!</p>
                 </div>
                 <div class="mt-4">
@@ -82,19 +79,16 @@
             </div>
 
             <div class="content-border mt-3">
-                <div>
-                    <p class="font-size-34px fw-bold mt-1" style="background: linear-gradient(130.13deg, #dfc191 6.56%, #fff3ce 44.78%, #bb9169 96.4%); -webkit-background-clip: text; color: transparent">
-                        <img class="mb-1 mr-1" style="width: 0.8vw" src="@/public/images/bar.png" alt="" />
-                        活动规则
-                    </p>
-                    <ul class="font-size-13px text-white mt-2">
-                        <li style="list-style: disc !important">所获得彩金只需<span class="text-yellow">【3倍流水】</span>方可申请提款；</li>
-                        <li style="list-style: disc !important">符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠;</li>
-                        <li style="list-style: disc !important">对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
-                        <li style="list-style: disc !important">同一IP和设备、同一手机号、姓名、银行卡号等信息的游戏账号，仅可参与一次，若有违规者，将不可享受此红利；</li>
-                        <li style="list-style: disc !important">任何用户或团体以不正常的方式进行套取活动优惠，平台方保留在不通知的情况下冻结或关闭相关账号的权利，并不退还款项，且用户会被列入黑名单。若发现有套利客户，对冲或不诚实获取盈利的行为，将取消其优惠资格；</li>
-                        <li style="list-style: disc !important">为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
-                    </ul>
+                <div class="mt-1">
+                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <ol class="font-size-13px text-white mt-2">
+                        <li>所获得彩金只需<span class="text-yellow">【3倍流水】</span>方可申请提款；</li>
+                        <li>符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠;</li>
+                        <li>对于各种非正常投注行为，如无风险投注、对冲等—经发现将取消优惠资格；</li>
+                        <li>同一IP和设备、同一手机号、姓名、银行卡号等信息的游戏账号，仅可参与一次，若有违规者，将不可享受此红利；</li>
+                        <li>任何用户或团体以不正常的方式进行套取活动优惠，平台方保留在不通知的情况下冻结或关闭相关账号的权利，并不退还款项，且用户会被列入黑名单。若发现有套利客户，对冲或不诚实获取盈利的行为，将取消其优惠资格；</li>
+                        <li>为避免文字差异，平台保留对本活动的最終解释权，并且有权更改．延迟或取消活动。</li>
+                    </ol>
                 </div>
             </div>
 
