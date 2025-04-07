@@ -129,6 +129,9 @@
         margin-left: 1.333vw;
     }
 
+    ol {
+        list-style: decimal !important;
+    }
     ul li {
         margin: 0.5rem 0;
         list-style: disc !important;
