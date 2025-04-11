@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">上周会员累计<span class="text-yellow">存款达到≥500元，周一当日存款累计≥100元</span>，即可获得平台专宠返利金，充值越高获得彩金最多! <span class="text-yellow">最高588专宠彩金</span>等您来拿，仅需<span class="text-yellow">3倍流水</span>即可出款!</p>
                 </div>
                 <div class="mt-4">
@@ -80,7 +82,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>所获得彩金只需<span class="text-yellow">【3倍流水】</span>方可申请提款；</li>
                         <li>符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠;</li>

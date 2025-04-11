@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">活动期间，凡是在【电子游艺厅】投注电子单量累计<span class="text-yellow">500个注单量</span>或以上，次日即可获得最高平均下注金额<span class="text-yellow">20倍</span>彩金，开启极速游戏模式，轻松赚取免单彩金！</p>
                 </div>
                 <div class="mt-4">
@@ -70,7 +72,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>所获得彩金只需<span class="text-yellow">1倍</span>流水方可申请提款。</li>
                         <li>此活动仅限投注电子的会员方可参与。</li>

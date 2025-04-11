@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">凡在棋牌游艺中，7天累计有效投注达1万或以上即可领取周周彩金，最高可达<span class="text-yellow">11137元！</span></p>
                 </div>
                 <div class="mt-4">
@@ -83,7 +85,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>周一至周日为一周期，凡是在【棋牌游艺】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金;</li>
                         <li>所获得彩金只需<span class="text-yellow">【3倍流水】</span>方可申请提款；</li>

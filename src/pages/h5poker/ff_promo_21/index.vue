@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">会员于本平台电子游艺中，只要单个注单派彩金额超过500元，即可获得加赠彩金最高<span class="text-yellow">17777元</span>！</p>
                 </div>
                 <div class="mt-4">
@@ -97,7 +99,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>所获得彩金只需<span class="text-yellow">1倍</span>流水方可申请提款；</li>
                         <li>每天可申请1次，每个注单仅限申请1次，天数按照美东时问进行计算。</li>

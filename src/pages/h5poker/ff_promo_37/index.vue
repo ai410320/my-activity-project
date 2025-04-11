@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">活动期间, 全体新会员<span class="text-yellow">【下载APP】</span>登录，第二次单笔存款<span class="text-yellow">1000元以上</span>，即可获得最高<span class="text-yellow">8888元</span>存款回馈金，您还在等什么？快来告诉您的亲朋好友一起参与吧！</p>
                 </div>
                 <div class="mt-4">
@@ -76,7 +78,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>活动开始后，您注册后将自动参加。您需要第三次充值并达到充值金额要求。</li>
                         <li>仅一次机会，充值越多，奖励越多，最高可获得奖励8888.00元。</li>

@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">即日起会员于棋牌游戏当日有效投注2137元+，次日即可获得棋牌得意金，祝您“棋”开得胜，最高可获<span class="text-yellow">7137元彩金！</span></p>
                 </div>
                 <div class="mt-4">
@@ -83,7 +85,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>所获得彩金只需<span class="text-yellow">3倍流水</span>方可申请提款；</li>
                         <li>符合领取条件的会员请在次日24小时内进行领取，逾期将无法领取该优惠；</li>

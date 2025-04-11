@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>即日起本公司注册会员帐号后成功充值，有效投注1元就能享受<span class="text-yellow">1.0%</span>的返水</li>
                         <li>当天（00:00:00-23:59:59）的有效投注额，会在第二天上午7点前自动洗码，自动添加到帐。</li>
@@ -73,7 +75,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>本娱乐城提供业界最高返水优惠活动，如发现会员进行非法炒水或是利用非法软件等形式进行投注或伙同代理套利，将永远冻结账号以及没收所有结余。</li>
                         <li>会员同一住址、同一账号、同一姓名、同一提款账号、同一电话或同一IP等相同者，我们将视为同一人，若本娱乐城在发现会员有重复申请账号进行套取彩金之行为时，保留取消、收回会员所有优惠彩金及没收该会员账号内余额的权利，每位玩家、每一住址、每一电子邮箱、每一电话号码、相同支付卡/信用卡号、同一IP、以及共享电脑环境（例如网吧或其它公用电脑等）</li>

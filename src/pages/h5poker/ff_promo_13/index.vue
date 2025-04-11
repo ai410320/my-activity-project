@@ -10,7 +10,9 @@
         <div class="container">
             <div class="content-border">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_detail.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_detail.svg" alt="" />
+                    </div>
                     <p class="text-white font-size-13px mt-3">活动期间，会员在【捕鱼游戏厅】<span class="text-yellow">周累计投注</span>额达到相应等级，即可获得相应彩金。</p>
                 </div>
                 <div class="mt-4">
@@ -92,7 +94,9 @@
 
             <div class="content-border mt-3">
                 <div class="mt-1">
-                    <img class="mb-1" src="@/public/images/promo_rule.svg" alt="" />
+                    <div class="justify-content-center">
+                        <img class="mb-1" style="height: 5.3vw" src="@/public/images/promo_rule.svg" alt="" />
+                    </div>
                     <ol class="font-size-13px text-white mt-2">
                         <li>周一至周日为一周期，凡是在【捕鱼游戏厅】周累计有效投注额达到对应等级，次周一即可在活动页面领取对应彩金。</li>
                         <li>该优惠按照达标的等级赠送一次，达标对应等级后次周一便可在优惠页面点击领取，所获彩金仅需<span class="text-yellow">【3倍流水】</span>即可取款。</li>
