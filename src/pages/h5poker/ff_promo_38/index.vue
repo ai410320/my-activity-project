@@ -76,11 +76,11 @@
                 </div>
                 <!-- 按鈕 -->
                 <div class="mt-3 justify-content-center">
-                    <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center">
+                    <div id="actionBtn" class="btn btn-fill-primary width-px-245 height-px-35 align-items-center justify-content-center" :class="buttonClass">
                         <div v-if="isSpin" class="spinner" id="spinner">
                             <div v-for="n in 12" :key="n" :style="getStyle(n)"></div>
                         </div>
-                        <span @click="sendEvent()" id="btnText" :class="buttonClass">{{ buttonText }}</span>
+                        <span @click="sendEvent()" id="btnText" >{{ buttonText }}</span>
                     </div>
                 </div>
             </div>
@@ -150,8 +150,7 @@ const rangeDescription = computed(() => {
 })
 // 計算按鈕的 class
 const buttonClass = computed(() => {
-    if (btnStatus.value === 3) return 'btn-disabled'
-    if (btnStatus.value === 2) return 'btn-opacity'
+    if (btnStatus.value === 3 || btnStatus.value === 2) return 'btn-opacity'
     return 'btn-effect'
 })
 

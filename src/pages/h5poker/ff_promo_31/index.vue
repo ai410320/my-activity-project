@@ -138,8 +138,7 @@ const rangeDescription = computed(() => {
 })
 // 計算按鈕的 class
 const buttonClass = computed(() => {
-    if (btnStatus.value === 3) return 'btn-disabled'
-    if (btnStatus.value === 2) return 'btn-opacity'
+    if (btnStatus.value === 3 || btnStatus.value === 2) return 'btn-opacity'
     return 'btn-effect'
 })
 
