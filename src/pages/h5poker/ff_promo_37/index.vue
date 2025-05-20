@@ -94,9 +94,9 @@
                 </div>
             </div>
 
-            <div id="crmFloat" class="crm-float">
+            <!-- <div id="crmFloat" class="crm-float">
                 <img src="@/public/images/crm_float.webp" alt="" />
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

@@ -132,6 +132,9 @@
     ol {
         list-style: decimal !important;
     }
+    ol li {
+        padding-bottom: 3px;
+    }
     ul li {
         margin: 0.5rem 0;
         list-style: disc !important;
